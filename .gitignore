@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+
+# Environment
+.env
+
+# TypeScript
+*.tsbuildinfo
+
+# Build
+dist
+
+# Testing
+coverage/
+.vitest
+
+# Agents
+CLAUDE.md

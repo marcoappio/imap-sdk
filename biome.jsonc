@@ -1,0 +1,90 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["ultracite/core"],
+  "files": {
+    "includes": ["package.json", "src/**/*.ts", "!lib", "!examples", "!test"]
+  },
+  "formatter": {
+    "indentWidth": 2,
+    "indentStyle": "space",
+    "lineWidth": 120
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingCommas": "all",
+      "attributePosition": "multiline",
+      "arrowParentheses": "asNeeded"
+    }
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              [":BUN:", ":PACKAGE:", "!@imap-sdk/**/*"],
+              ":BLANK_LINE:",
+              ["@imap-sdk/**/*"],
+              ":BLANK_LINE:",
+              ":PATH:"
+            ]
+          }
+        },
+        "useSortedKeys": "on"
+      }
+    },
+    "enabled": true,
+    "includes": ["**", "!**/*/package.json", "!package.json"]
+  },
+  "linter": {
+    "rules": {
+      "correctness": {
+        "noUnusedImports": {
+          "level": "error",
+          "fix": "safe"
+        }
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off",
+        "noEmptyBlockStatements": "off"
+      },
+      "nursery": {
+        "noUselessUndefined": "off",
+        "useConsistentArrowReturn": "error"
+      },
+      "style": {
+        "useAtIndex": "off",
+        "noNamespace": "off",
+        "useNodejsImportProtocol": "off",
+        "noParameterAssign": "off",
+        "noEnum": "off",
+        "useFilenamingConvention": "off",
+        "useDefaultParameterLast": "off"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["src/index.ts"],
+      "linter": {
+        "rules": {
+          "performance": {
+            "noBarrelFile": "off"
+          }
+        }
+      }
+    }
+  ]
+}
