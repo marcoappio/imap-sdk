@@ -360,4 +360,4 @@ export const idle = (ctx: IDLEContext, options: IDLEOptions = {}): IDLEControlle
   }
 }
 
-export type { IDLEContext as IdleContext, IDLEOptions as IdleOptions }
+export type { IDLEContext as IdleContext, IDLEController, IDLEOptions as IdleOptions }
