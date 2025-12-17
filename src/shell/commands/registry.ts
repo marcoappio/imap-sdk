@@ -8,7 +8,7 @@ import { create } from './create'
 import { deleteMailbox } from './delete'
 import { enable } from './enable'
 import { expunge } from './expunge'
-import { fetch } from './fetch'
+import { fetch, fetchStream } from './fetch'
 import { id } from './id'
 import { idle } from './idle'
 import { list } from './list'
@@ -42,6 +42,7 @@ const commands: Record<string, CommandFn> = {
   EXAMINE: examine,
   EXPUNGE: expunge,
   FETCH: fetch,
+  FETCH_STREAM: fetchStream,
   ID: id,
   IDLE: idle,
   LIST: list,

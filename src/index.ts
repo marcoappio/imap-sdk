@@ -1,6 +1,7 @@
 export type { IMAPClientEvents, IMAPClientOptions } from '@imap-sdk/shell/client/index'
 export { createIMAPClient, IMAPClient } from '@imap-sdk/shell/client/index'
 export type { Lock } from '@imap-sdk/shell/client/mailbox-lock'
+export type { FetchOptions, FetchResult, FetchStreamOptions } from '@imap-sdk/shell/commands/fetch'
 export type {
   CommandContext,
   CommandContextState,
