@@ -1,4 +1,6 @@
-import { fetch } from './fetch'
+import type { ParsedResponse } from '@imap-sdk/types/protocol'
+
+import { fetch, fetchStream } from './fetch'
 import {
   createMockContext,
   createMockLoggerWithWarn,
@@ -546,6 +548,193 @@ describe('fetch command', () => {
         /* expected */
       }
       expect(warnCalls.length).toBeGreaterThan(0)
+    })
+  })
+})
+
+describe('fetchStream command', () => {
+  describe('preconditions', () => {
+    it('should return immediately if state is NOT_AUTHENTICATED', async () => {
+      const ctx = createMockContext({ state: 'NOT_AUTHENTICATED' })
+      const messages: unknown[] = []
+      for await (const msg of fetchStream(ctx, '1:*', { uid: true })) {
+        messages.push(msg)
+      }
+      expect(messages).toHaveLength(0)
+    })
+
+    it('should return immediately if state is AUTHENTICATED', async () => {
+      const ctx = createMockContext({ state: 'AUTHENTICATED' })
+      const messages: unknown[] = []
+      for await (const msg of fetchStream(ctx, '1:*', { uid: true })) {
+        messages.push(msg)
+      }
+      expect(messages).toHaveLength(0)
+    })
+
+    it('should return immediately if state is LOGOUT', async () => {
+      const ctx = createMockContext({ state: 'LOGOUT' })
+      const messages: unknown[] = []
+      for await (const msg of fetchStream(ctx, '1:*', { uid: true })) {
+        messages.push(msg)
+      }
+      expect(messages).toHaveLength(0)
+    })
+
+    it('should return immediately if range is empty', async () => {
+      const ctx = createMockContext({ state: 'SELECTED' })
+      const messages: unknown[] = []
+      for await (const msg of fetchStream(ctx, '', { uid: true })) {
+        messages.push(msg)
+      }
+      expect(messages).toHaveLength(0)
+    })
+  })
+
+  describe('command structure', () => {
+    it('should send FETCH command with range', async () => {
+      const ctx = createMockContext({ state: 'SELECTED' })
+      const iterator = fetchStream(ctx, '1:10', { uid: true })
+      iterator.next()
+
+      await new Promise(resolve => setTimeout(resolve, 0))
+
+      expect(ctx.mockExecCalls).toHaveLength(1)
+      expect(ctx.mockExecCalls[0].command).toBe('FETCH')
+      expect(ctx.mockExecCalls[0].attributes[0]).toMatchObject({
+        type: 'SEQUENCE',
+        value: '1:10',
+      })
+    })
+
+    it('should send UID FETCH when uid option is true', async () => {
+      const ctx = createMockContext({ state: 'SELECTED' })
+      const iterator = fetchStream(ctx, '1:10', { uid: true }, { uid: true })
+      iterator.next()
+
+      await new Promise(resolve => setTimeout(resolve, 0))
+
+      expect(ctx.mockExecCalls[0].command).toBe('UID FETCH')
+    })
+  })
+
+  describe('streaming behavior', () => {
+    it('should yield messages as they arrive', async () => {
+      const ctx = createMockContext({ state: 'SELECTED' })
+      const messages: unknown[] = []
+
+      let resolveExec: () => void = () => {}
+      let capturedOptions: { untagged?: { FETCH?: (resp: ParsedResponse) => void } } | undefined
+      ctx.exec = (command, attributes = [], options) => {
+        ctx.mockExecCalls.push({ attributes: attributes as unknown[], command, options })
+        capturedOptions = options as typeof capturedOptions
+        return new Promise(resolve => {
+          resolveExec = () =>
+            resolve({
+              next: () => undefined,
+              response: createMockResponse(),
+              tag: 'A001' as never,
+            })
+        })
+      }
+
+      const streamPromise = (async () => {
+        for await (const msg of fetchStream(ctx, '1:*', { uid: true })) {
+          messages.push(msg)
+        }
+      })()
+
+      await new Promise(resolve => setTimeout(resolve, 0))
+
+      capturedOptions?.untagged?.FETCH?.(
+        createMockResponse({
+          attributes: [createToken('UID'), createToken('1')],
+          command: '1',
+        }),
+      )
+
+      capturedOptions?.untagged?.FETCH?.(
+        createMockResponse({
+          attributes: [createToken('UID'), createToken('2')],
+          command: '2',
+        }),
+      )
+
+      capturedOptions?.untagged?.FETCH?.(
+        createMockResponse({
+          attributes: [createToken('UID'), createToken('3')],
+          command: '3',
+        }),
+      )
+
+      resolveExec()
+      await streamPromise
+
+      expect(messages).toHaveLength(3)
+      expect((messages[0] as { uid: number }).uid).toBe(1)
+      expect((messages[1] as { uid: number }).uid).toBe(2)
+      expect((messages[2] as { uid: number }).uid).toBe(3)
+    })
+
+    it('should parse FLAGS from streamed messages', async () => {
+      const ctx = createMockContext({ state: 'SELECTED' })
+      const messages: unknown[] = []
+
+      let resolveExec: () => void = () => {}
+      let capturedOptions: { untagged?: { FETCH?: (resp: ParsedResponse) => void } } | undefined
+      ctx.exec = (command, attributes = [], options) => {
+        ctx.mockExecCalls.push({ attributes: attributes as unknown[], command, options })
+        capturedOptions = options as typeof capturedOptions
+        return new Promise(resolve => {
+          resolveExec = () =>
+            resolve({
+              next: () => undefined,
+              response: createMockResponse(),
+              tag: 'A001' as never,
+            })
+        })
+      }
+
+      const streamPromise = (async () => {
+        for await (const msg of fetchStream(ctx, '1:*', { flags: true })) {
+          messages.push(msg)
+        }
+      })()
+
+      await new Promise(resolve => setTimeout(resolve, 0))
+
+      capturedOptions?.untagged?.FETCH?.(
+        createMockResponse({
+          attributes: [
+            createToken('FLAGS'),
+            [createToken('\\Seen'), createToken('\\Flagged')],
+            createToken('UID'),
+            createToken('1'),
+          ] as never,
+          command: '1',
+        }),
+      )
+
+      resolveExec()
+      await streamPromise
+
+      expect(messages).toHaveLength(1)
+      const msg = messages[0] as { flags: Set<string> }
+      expect(msg.flags.has('\\Seen')).toBe(true)
+      expect(msg.flags.has('\\Flagged')).toBe(true)
+    })
+  })
+
+  describe('error handling', () => {
+    it('should throw on error after iteration', async () => {
+      const ctx = createMockContext({ state: 'SELECTED' })
+      ctx.exec = createThrowingExec('Server error')
+
+      await expect(async () => {
+        for await (const _msg of fetchStream(ctx, '1:*', { uid: true })) {
+          /* consume */
+        }
+      }).rejects.toThrow('Server error')
     })
   })
 })

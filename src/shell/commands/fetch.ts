@@ -226,25 +226,20 @@ const parseMessage = (response: ParsedResponse): FetchedMessage => {
   }
 }
 
-export const fetch = async (
+export type FetchStreamOptions = {
+  readonly uid?: boolean
+  readonly binary?: boolean
+  readonly changedSince?: bigint
+}
+
+const buildFetchAttributes = (
   ctx: CommandContext,
   range: string,
   query: FetchQuery,
-  options: FetchOptions = {},
-): Promise<FetchResult | undefined> => {
-  if (ctx.state !== 'SELECTED' || !range) {
-    return undefined
-  }
-
+  options: FetchStreamOptions,
+): unknown[] => {
   const commandKey = ctx.capabilities.has('BINARY') && options.binary ? 'BINARY' : 'BODY'
-
-  const messages: { count: number; list: FetchedMessage[] } = {
-    count: 0,
-    list: [],
-  }
-
   const attributes: unknown[] = [{ type: 'SEQUENCE', value: range }]
-
   const queryStructure = buildQueryStructure(ctx, query, commandKey)
 
   if (queryStructure.length === 1) {
@@ -264,6 +259,26 @@ export const fetch = async (
     }
 
     attributes.push(changedSinceArgs)
+  }
+
+  return attributes
+}
+
+export const fetch = async (
+  ctx: CommandContext,
+  range: string,
+  query: FetchQuery,
+  options: FetchOptions = {},
+): Promise<FetchResult | undefined> => {
+  if (ctx.state !== 'SELECTED' || !range) {
+    return undefined
+  }
+
+  const attributes = buildFetchAttributes(ctx, range, query, options)
+
+  const messages: { count: number; list: FetchedMessage[] } = {
+    count: 0,
+    list: [],
   }
 
   try {
@@ -295,6 +310,71 @@ export const fetch = async (
     return messages
   } catch (error) {
     ctx.log.warn({ cid: ctx.id, error })
+    throw error
+  }
+}
+
+export async function* fetchStream(
+  ctx: CommandContext,
+  range: string,
+  query: FetchQuery,
+  options: FetchStreamOptions = {},
+): AsyncGenerator<FetchedMessage, void, undefined> {
+  if (ctx.state !== 'SELECTED' || !range) {
+    return
+  }
+
+  const attributes = buildFetchAttributes(ctx, range, query, options)
+
+  const queue: FetchedMessage[] = []
+  let resolveWait: (() => void) | null = null
+  let done = false
+  let error: Error | null = null
+
+  const execPromise = ctx
+    .exec(options.uid ? 'UID FETCH' : 'FETCH', attributes as never, {
+      untagged: {
+        FETCH: untagged => {
+          const parsed = parseMessage(untagged)
+          queue.push(parsed)
+          if (resolveWait) {
+            resolveWait()
+            resolveWait = null
+          }
+        },
+      },
+    })
+    .then(response => {
+      response.next()
+      done = true
+      if (resolveWait) {
+        resolveWait()
+        resolveWait = null
+      }
+    })
+    .catch(err => {
+      error = err instanceof Error ? err : new Error(String(err))
+      done = true
+      if (resolveWait) {
+        resolveWait()
+        resolveWait = null
+      }
+    })
+
+  while (!done || queue.length > 0) {
+    const message = queue.shift()
+    if (message) {
+      yield message
+    } else if (!done) {
+      await new Promise<void>(resolve => {
+        resolveWait = resolve
+      })
+    }
+  }
+
+  await execPromise
+
+  if (error) {
     throw error
   }
 }
