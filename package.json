@@ -13,6 +13,7 @@
     "build": "tsc && tsc-alias",
     "build:docs": "typedoc",
     "lint": "biome check . --error-on-warnings",
+    "release": "bun run build && auto shipit",
     "test": "vitest --run",
     "typecheck": "tsc -noEmit --incremental"
   },
@@ -22,6 +23,11 @@
     "docs/",
     "README.md"
   ],
+  "auto": {
+    "plugins": [
+      "npm"
+    ]
+  },
   "dependencies": {
     "@zone-eu/mailsplit": "5.4.8",
     "date-fns": "4.1.0",
@@ -35,9 +41,11 @@
     "xstate": "5.25.0"
   },
   "devDependencies": {
+    "@auto-it/npm": "11.2.0",
     "@biomejs/biome": "2.3.0",
     "@types/libmime": "5.3.0",
     "@types/node": "24.9.0",
+    "auto": "11.2.0",
     "jsdoc": "4.0.4",
     "prettier": "3.7.4",
     "st": "3.0.3",
