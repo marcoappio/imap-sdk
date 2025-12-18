@@ -37,38 +37,6 @@ type IDLEState = {
   idleTimer?: ReturnType<typeof setTimeout>
 }
 
-const parseUntaggedEvent = (ctx: IDLEContext, response: ParsedResponse): IDLEEvent | undefined => {
-  const command = response.command?.toUpperCase()
-
-  if (command === 'EXISTS') {
-    const count = Number(response.tag === '*' ? response.attributes?.[0] : undefined)
-
-    if (!Number.isNaN(count)) {
-      const prevCount = ctx.mailbox?.exists ?? 0
-      return { count, prevCount, type: 'exists' }
-    }
-  }
-
-  if (command === 'EXPUNGE') {
-    const seq = Number(response.tag === '*' ? response.attributes?.[0] : undefined)
-
-    if (!Number.isNaN(seq)) {
-      return { seq, type: 'expunge' }
-    }
-  }
-
-  if (command === 'FETCH') {
-    const seqAttr = response.attributes?.[0]
-    const seq = typeof seqAttr === 'object' && 'value' in seqAttr ? Number(seqAttr.value) : Number.NaN
-
-    if (!Number.isNaN(seq)) {
-      return { seq, type: 'fetch' }
-    }
-  }
-
-  return undefined
-}
-
 const enqueueEvent = (state: IDLEState, event: IDLEEvent): void => {
   if (state.stopped) {
     return
@@ -78,24 +46,25 @@ const enqueueEvent = (state: IDLEState, event: IDLEEvent): void => {
 
 const createUntaggedHandlers = (state: IDLEState) => ({
   EXISTS: (response: ParsedResponse) => {
-    const event = parseUntaggedEvent(state.ctx, { ...response, command: 'EXISTS' })
+    const count = Number(response.command)
 
-    if (event) {
-      enqueueEvent(state, event)
+    if (!Number.isNaN(count)) {
+      const prevCount = state.ctx.mailbox?.exists ?? 0
+      enqueueEvent(state, { count, prevCount, type: 'exists' })
     }
   },
   EXPUNGE: (response: ParsedResponse) => {
-    const event = parseUntaggedEvent(state.ctx, { ...response, command: 'EXPUNGE' })
+    const seq = Number(response.command)
 
-    if (event) {
-      enqueueEvent(state, event)
+    if (!Number.isNaN(seq)) {
+      enqueueEvent(state, { seq, type: 'expunge' })
     }
   },
   FETCH: (response: ParsedResponse) => {
-    const event = parseUntaggedEvent(state.ctx, { ...response, command: 'FETCH' })
+    const seq = Number(response.command)
 
-    if (event) {
-      enqueueEvent(state, event)
+    if (!Number.isNaN(seq)) {
+      enqueueEvent(state, { seq, type: 'fetch' })
     }
   },
 })
