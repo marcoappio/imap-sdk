@@ -4,7 +4,7 @@
 
 ### AuthenticationError
 
-Defined in: [src/types/errors.ts:172](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L172)
+Defined in: [src/types/errors.ts:172](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L172)
 
 #### Extends
 
@@ -21,7 +21,7 @@ new AuthenticationError(
    oauthError?: unknown): AuthenticationError;
 ```
 
-Defined in: [src/types/errors.ts:175](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L175)
+Defined in: [src/types/errors.ts:175](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L175)
 
 ###### Parameters
 
@@ -44,18 +44,18 @@ Defined in: [src/types/errors.ts:175](https://github.com/marcoappio/imap-sdk/blo
 | Property | Modifier | Type | Default value | Description | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | <a id="cause"></a> `cause?` | `public` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`cause`](#cause-2) | node\_modules/typescript/lib/lib.es2022.error.d.ts:26 |
-| <a id="code"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L37) |
-| <a id="extension"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L43) |
+| <a id="code"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L37) |
+| <a id="extension"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L43) |
 | <a id="message"></a> `message` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`message`](#message-2) | node\_modules/typescript/lib/lib.es5.d.ts:1077 |
-| <a id="name"></a> `name` | `readonly` | `"AuthenticationError"` | `'AuthenticationError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:173](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L173) |
-| <a id="oautherror"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L39) |
-| <a id="parserinput"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L45) |
-| <a id="parserposition"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L44) |
-| <a id="responsestatus"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L40) |
-| <a id="responsetext"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L41) |
-| <a id="serverresponsecode"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L38) |
+| <a id="name"></a> `name` | `readonly` | `"AuthenticationError"` | `'AuthenticationError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:173](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L173) |
+| <a id="oautherror"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L39) |
+| <a id="parserinput"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L45) |
+| <a id="parserposition"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L44) |
+| <a id="responsestatus"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L40) |
+| <a id="responsetext"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L41) |
+| <a id="serverresponsecode"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L38) |
 | <a id="stack"></a> `stack?` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`stack`](#stack-2) | node\_modules/typescript/lib/lib.es5.d.ts:1078 |
-| <a id="throttlereset"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L42) |
+| <a id="throttlereset"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L42) |
 | <a id="stacktracelimit"></a> `stackTraceLimit` | `static` | `number` | `undefined` | The `Error.stackTraceLimit` property specifies the number of stack frames collected by a stack trace (whether generated by `new Error().stack` or `Error.captureStackTrace(obj)`). The default value is `10` but may be set to any valid JavaScript number. Changes will affect any stack trace captured _after_ the value has been changed. If set to a non-number value, or set to a negative number, stack traces will not capture any frames. | - | [`IMAPSDKError`](#imapsdkerror).[`stackTraceLimit`](#stacktracelimit-2) | node\_modules/@types/node/globals.d.ts:68 |
 
 #### Methods
@@ -69,7 +69,7 @@ static authentication(
    oauthError?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L74)
+Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L74)
 
 ###### Parameters
 
@@ -163,7 +163,7 @@ static commandFailed(
    responseText?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L94)
+Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L94)
 
 ###### Parameters
 
@@ -194,7 +194,7 @@ static connection(code:
   | "UPGRADE_TIMEOUT", message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L60)
+Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L60)
 
 ###### Parameters
 
@@ -217,7 +217,7 @@ Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob
 static disposed(resource: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L120)
+Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L120)
 
 ###### Parameters
 
@@ -239,7 +239,7 @@ Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blo
 static internal(message: string, cause?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L124)
+Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L124)
 
 ###### Parameters
 
@@ -262,7 +262,7 @@ Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blo
 static invalidState(message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L116)
+Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L116)
 
 ###### Parameters
 
@@ -308,7 +308,7 @@ Indicates whether the argument provided is a built-in Error instance or not.
 static isIMAPSDKError(error: unknown): error is IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L128)
+Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L128)
 
 ###### Parameters
 
@@ -330,7 +330,7 @@ Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blo
 static missingExtension(message: string, extension: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L112)
+Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L112)
 
 ###### Parameters
 
@@ -356,7 +356,7 @@ static parser(
    input?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L101)
+Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L101)
 
 ###### Parameters
 
@@ -411,7 +411,7 @@ static protocol(
    serverResponseCode?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L81)
+Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L81)
 
 ###### Parameters
 
@@ -436,7 +436,7 @@ Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob
 static throttled(message: string, throttleReset: number): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L108)
+Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L108)
 
 ###### Parameters
 
@@ -457,7 +457,7 @@ Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blo
 
 ### ConnectionError
 
-Defined in: [src/types/errors.ts:163](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L163)
+Defined in: [src/types/errors.ts:163](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L163)
 
 #### Extends
 
@@ -471,7 +471,7 @@ Defined in: [src/types/errors.ts:163](https://github.com/marcoappio/imap-sdk/blo
 new ConnectionError(code: ConnectionErrorCode, message: string): ConnectionError;
 ```
 
-Defined in: [src/types/errors.ts:167](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L167)
+Defined in: [src/types/errors.ts:167](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L167)
 
 ###### Parameters
 
@@ -493,18 +493,18 @@ Defined in: [src/types/errors.ts:167](https://github.com/marcoappio/imap-sdk/blo
 | Property | Modifier | Type | Default value | Description | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | <a id="cause-1"></a> `cause?` | `public` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`cause`](#cause-2) | node\_modules/typescript/lib/lib.es2022.error.d.ts:26 |
-| <a id="code-1"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L37) |
-| <a id="extension-1"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L43) |
+| <a id="code-1"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L37) |
+| <a id="extension-1"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L43) |
 | <a id="message-1"></a> `message` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`message`](#message-2) | node\_modules/typescript/lib/lib.es5.d.ts:1077 |
-| <a id="name-1"></a> `name` | `readonly` | `"ConnectionError"` | `'ConnectionError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:164](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L164) |
-| <a id="oautherror-1"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L39) |
-| <a id="parserinput-1"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L45) |
-| <a id="parserposition-1"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L44) |
-| <a id="responsestatus-1"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L40) |
-| <a id="responsetext-1"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L41) |
-| <a id="serverresponsecode-1"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L38) |
+| <a id="name-1"></a> `name` | `readonly` | `"ConnectionError"` | `'ConnectionError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:164](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L164) |
+| <a id="oautherror-1"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L39) |
+| <a id="parserinput-1"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L45) |
+| <a id="parserposition-1"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L44) |
+| <a id="responsestatus-1"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L40) |
+| <a id="responsetext-1"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L41) |
+| <a id="serverresponsecode-1"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L38) |
 | <a id="stack-1"></a> `stack?` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`stack`](#stack-2) | node\_modules/typescript/lib/lib.es5.d.ts:1078 |
-| <a id="throttlereset-1"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L42) |
+| <a id="throttlereset-1"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L42) |
 | <a id="stacktracelimit-1"></a> `stackTraceLimit` | `static` | `number` | `undefined` | The `Error.stackTraceLimit` property specifies the number of stack frames collected by a stack trace (whether generated by `new Error().stack` or `Error.captureStackTrace(obj)`). The default value is `10` but may be set to any valid JavaScript number. Changes will affect any stack trace captured _after_ the value has been changed. If set to a non-number value, or set to a negative number, stack traces will not capture any frames. | - | [`IMAPSDKError`](#imapsdkerror).[`stackTraceLimit`](#stacktracelimit-2) | node\_modules/@types/node/globals.d.ts:68 |
 
 #### Methods
@@ -518,7 +518,7 @@ static authentication(
    oauthError?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L74)
+Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L74)
 
 ###### Parameters
 
@@ -612,7 +612,7 @@ static commandFailed(
    responseText?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L94)
+Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L94)
 
 ###### Parameters
 
@@ -643,7 +643,7 @@ static connection(code:
   | "UPGRADE_TIMEOUT", message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L60)
+Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L60)
 
 ###### Parameters
 
@@ -666,7 +666,7 @@ Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob
 static disposed(resource: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L120)
+Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L120)
 
 ###### Parameters
 
@@ -688,7 +688,7 @@ Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blo
 static internal(message: string, cause?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L124)
+Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L124)
 
 ###### Parameters
 
@@ -711,7 +711,7 @@ Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blo
 static invalidState(message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L116)
+Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L116)
 
 ###### Parameters
 
@@ -757,7 +757,7 @@ Indicates whether the argument provided is a built-in Error instance or not.
 static isIMAPSDKError(error: unknown): error is IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L128)
+Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L128)
 
 ###### Parameters
 
@@ -779,7 +779,7 @@ Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blo
 static missingExtension(message: string, extension: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L112)
+Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L112)
 
 ###### Parameters
 
@@ -805,7 +805,7 @@ static parser(
    input?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L101)
+Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L101)
 
 ###### Parameters
 
@@ -860,7 +860,7 @@ static protocol(
    serverResponseCode?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L81)
+Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L81)
 
 ###### Parameters
 
@@ -885,7 +885,7 @@ Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob
 static throttled(message: string, throttleReset: number): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L108)
+Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L108)
 
 ###### Parameters
 
@@ -906,7 +906,7 @@ Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blo
 
 ### IMAPClient
 
-Defined in: [src/shell/client/index.ts:58](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L58)
+Defined in: [src/shell/client/index.ts:58](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L58)
 
 #### Extends
 
@@ -925,7 +925,7 @@ Defined in: [src/shell/client/index.ts:58](https://github.com/marcoappio/imap-sd
 new IMAPClient(options: IMAPClientOptions): IMAPClient;
 ```
 
-Defined in: [src/shell/client/index.ts:82](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L82)
+Defined in: [src/shell/client/index.ts:82](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L82)
 
 ###### Parameters
 
@@ -947,7 +947,7 @@ EventEmitter.constructor
 
 | Property | Modifier | Type | Description | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `readonly` | [`ConnectionId`](#connectionid) | - | - | [src/shell/client/index.ts:59](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L59) |
+| <a id="id"></a> `id` | `readonly` | [`ConnectionId`](#connectionid) | - | - | [src/shell/client/index.ts:59](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L59) |
 | <a id="capturerejections"></a> `captureRejections` | `static` | `boolean` | Value: [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) Change the default `captureRejections` option on all new `EventEmitter` objects. **Since** v13.4.0, v12.16.0 | `EventEmitter.captureRejections` | node\_modules/@types/node/events.d.ts:425 |
 | <a id="capturerejectionsymbol"></a> `captureRejectionSymbol` | `readonly` | *typeof* [`captureRejectionSymbol`](#capturerejectionsymbol) | Value: `Symbol.for('nodejs.rejection')` See how to write a custom `rejection handler`. **Since** v13.4.0, v12.16.0 | `EventEmitter.captureRejectionSymbol` | node\_modules/@types/node/events.d.ts:418 |
 | <a id="defaultmaxlisteners"></a> `defaultMaxListeners` | `static` | `number` | By default, a maximum of `10` listeners can be registered for any single event. This limit can be changed for individual `EventEmitter` instances using the `emitter.setMaxListeners(n)` method. To change the default for _all_`EventEmitter` instances, the `events.defaultMaxListeners` property can be used. If this value is not a positive number, a `RangeError` is thrown. Take caution when setting the `events.defaultMaxListeners` because the change affects _all_ `EventEmitter` instances, including those created before the change is made. However, calling `emitter.setMaxListeners(n)` still has precedence over `events.defaultMaxListeners`. This is not a hard limit. The `EventEmitter` instance will allow more listeners to be added but will output a trace warning to stderr indicating that a "possible EventEmitter memory leak" has been detected. For any single `EventEmitter`, the `emitter.getMaxListeners()` and `emitter.setMaxListeners()` methods can be used to temporarily avoid this warning: `import { EventEmitter } from 'node:events'; const emitter = new EventEmitter(); emitter.setMaxListeners(emitter.getMaxListeners() + 1); emitter.once('event', () => { // do stuff emitter.setMaxListeners(Math.max(emitter.getMaxListeners() - 1, 0)); });` The `--trace-warnings` command-line flag can be used to display the stack trace for such warnings. The emitted warning can be inspected with `process.on('warning')` and will have the additional `emitter`, `type`, and `count` properties, referring to the event emitter instance, the event's name and the number of attached listeners, respectively. Its `name` property is set to `'MaxListenersExceededWarning'`. **Since** v0.11.2 | `EventEmitter.defaultMaxListeners` | node\_modules/@types/node/events.d.ts:464 |
@@ -963,7 +963,7 @@ EventEmitter.constructor
 get authCapabilities(): ReadonlyMap<string, boolean>;
 ```
 
-Defined in: [src/shell/client/index.ts:112](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L112)
+Defined in: [src/shell/client/index.ts:112](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L112)
 
 ###### Returns
 
@@ -983,7 +983,7 @@ CommandContext.authCapabilities
 get capabilities(): ReadonlySet<string>;
 ```
 
-Defined in: [src/shell/client/index.ts:104](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L104)
+Defined in: [src/shell/client/index.ts:104](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L104)
 
 ###### Returns
 
@@ -1003,7 +1003,7 @@ CommandContext.capabilities
 get enabled(): ReadonlySet<string>;
 ```
 
-Defined in: [src/shell/client/index.ts:108](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L108)
+Defined in: [src/shell/client/index.ts:108](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L108)
 
 ###### Returns
 
@@ -1023,7 +1023,7 @@ CommandContext.enabled
 get expectCapabilityUpdate(): boolean;
 ```
 
-Defined in: [src/shell/client/index.ts:149](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L149)
+Defined in: [src/shell/client/index.ts:149](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L149)
 
 ###### Returns
 
@@ -1043,7 +1043,7 @@ CommandContext.expectCapabilityUpdate
 get folders(): ReadonlyMap<MailboxPath, MailboxListEntry>;
 ```
 
-Defined in: [src/shell/client/index.ts:145](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L145)
+Defined in: [src/shell/client/index.ts:145](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L145)
 
 ###### Returns
 
@@ -1063,7 +1063,7 @@ CommandContext.folders
 get isCompressed(): boolean;
 ```
 
-Defined in: [src/shell/client/index.ts:157](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L157)
+Defined in: [src/shell/client/index.ts:157](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L157)
 
 ###### Returns
 
@@ -1077,7 +1077,7 @@ Defined in: [src/shell/client/index.ts:157](https://github.com/marcoappio/imap-s
 get isDisposed(): boolean;
 ```
 
-Defined in: [src/shell/client/index.ts:153](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L153)
+Defined in: [src/shell/client/index.ts:153](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L153)
 
 ###### Returns
 
@@ -1091,7 +1091,7 @@ Defined in: [src/shell/client/index.ts:153](https://github.com/marcoappio/imap-s
 get log(): Logger;
 ```
 
-Defined in: [src/shell/client/index.ts:100](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L100)
+Defined in: [src/shell/client/index.ts:100](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L100)
 
 ###### Returns
 
@@ -1111,7 +1111,7 @@ CommandContext.log
 get mailbox(): MailboxInfo | null;
 ```
 
-Defined in: [src/shell/client/index.ts:141](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L141)
+Defined in: [src/shell/client/index.ts:141](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L141)
 
 ###### Returns
 
@@ -1131,7 +1131,7 @@ CommandContext.mailbox
 get servername(): string;
 ```
 
-Defined in: [src/shell/client/index.ts:116](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L116)
+Defined in: [src/shell/client/index.ts:116](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L116)
 
 ###### Returns
 
@@ -1151,7 +1151,7 @@ CommandContext.servername
 get state(): CommandContextState;
 ```
 
-Defined in: [src/shell/client/index.ts:120](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L120)
+Defined in: [src/shell/client/index.ts:120](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L120)
 
 ###### Returns
 
@@ -1171,7 +1171,7 @@ CommandContext.state
 asyncDispose: Promise<void>;
 ```
 
-Defined in: [src/shell/client/index.ts:407](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L407)
+Defined in: [src/shell/client/index.ts:407](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L407)
 
 ###### Returns
 
@@ -1224,7 +1224,7 @@ EventEmitter.[captureRejectionSymbol]
 addEnabled(extension: string): void;
 ```
 
-Defined in: [src/shell/client/index.ts:170](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L170)
+Defined in: [src/shell/client/index.ts:170](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L170)
 
 ###### Parameters
 
@@ -1285,7 +1285,7 @@ EventEmitter.addListener
 authenticate(auth: AuthOptions): Promise<string>;
 ```
 
-Defined in: [src/shell/client/index.ts:276](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L276)
+Defined in: [src/shell/client/index.ts:276](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L276)
 
 ###### Parameters
 
@@ -1303,7 +1303,7 @@ Defined in: [src/shell/client/index.ts:276](https://github.com/marcoappio/imap-s
 close(): Promise<void>;
 ```
 
-Defined in: [src/shell/client/index.ts:372](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L372)
+Defined in: [src/shell/client/index.ts:372](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L372)
 
 ###### Returns
 
@@ -1315,7 +1315,7 @@ Defined in: [src/shell/client/index.ts:372](https://github.com/marcoappio/imap-s
 connect(): Promise<void>;
 ```
 
-Defined in: [src/shell/client/index.ts:216](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L216)
+Defined in: [src/shell/client/index.ts:216](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L216)
 
 ###### Returns
 
@@ -1327,7 +1327,7 @@ Defined in: [src/shell/client/index.ts:216](https://github.com/marcoappio/imap-s
 dispose(): void;
 ```
 
-Defined in: [src/shell/client/index.ts:377](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L377)
+Defined in: [src/shell/client/index.ts:377](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L377)
 
 ###### Returns
 
@@ -1416,7 +1416,7 @@ emitExists(info: {
 }): void;
 ```
 
-Defined in: [src/shell/client/index.ts:204](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L204)
+Defined in: [src/shell/client/index.ts:204](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L204)
 
 ###### Parameters
 
@@ -1447,7 +1447,7 @@ emitExpunge(info: {
 }): void;
 ```
 
-Defined in: [src/shell/client/index.ts:208](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L208)
+Defined in: [src/shell/client/index.ts:208](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L208)
 
 ###### Parameters
 
@@ -1480,7 +1480,7 @@ emitFlags(info: {
 }): void;
 ```
 
-Defined in: [src/shell/client/index.ts:212](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L212)
+Defined in: [src/shell/client/index.ts:212](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L212)
 
 ###### Parameters
 
@@ -1509,7 +1509,7 @@ CommandContext.emitFlags
 emitMailboxClose(mailbox: MailboxInfo): void;
 ```
 
-Defined in: [src/shell/client/index.ts:200](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L200)
+Defined in: [src/shell/client/index.ts:200](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L200)
 
 ###### Parameters
 
@@ -1533,7 +1533,7 @@ CommandContext.emitMailboxClose
 emitMailboxOpen(mailbox: MailboxInfo): void;
 ```
 
-Defined in: [src/shell/client/index.ts:196](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L196)
+Defined in: [src/shell/client/index.ts:196](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L196)
 
 ###### Parameters
 
@@ -1557,7 +1557,7 @@ CommandContext.emitMailboxOpen
 enableCompression(): void;
 ```
 
-Defined in: [src/shell/client/index.ts:161](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L161)
+Defined in: [src/shell/client/index.ts:161](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L161)
 
 ###### Returns
 
@@ -1611,7 +1611,7 @@ exec(
 options: ExecOptions): Promise<ExecResponse>;
 ```
 
-Defined in: [src/shell/client/index.ts:291](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L291)
+Defined in: [src/shell/client/index.ts:291](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L291)
 
 ###### Parameters
 
@@ -1637,7 +1637,7 @@ CommandContext.exec
 getMailboxLock(path: MailboxPath): Promise<Lock>;
 ```
 
-Defined in: [src/shell/client/index.ts:354](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L354)
+Defined in: [src/shell/client/index.ts:354](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L354)
 
 ###### Parameters
 
@@ -1763,7 +1763,7 @@ EventEmitter.listeners
 logout(): Promise<void>;
 ```
 
-Defined in: [src/shell/client/index.ts:358](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L358)
+Defined in: [src/shell/client/index.ts:358](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L358)
 
 ###### Returns
 
@@ -2241,7 +2241,7 @@ EventEmitter.removeListener
 run<T>(command: string, ...args: unknown[]): Promise<T>;
 ```
 
-Defined in: [src/shell/client/index.ts:344](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L344)
+Defined in: [src/shell/client/index.ts:344](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L344)
 
 ###### Type Parameters
 
@@ -2272,7 +2272,7 @@ CommandContext.run
 setAuthCapability(method: string, success: boolean): void;
 ```
 
-Defined in: [src/shell/client/index.ts:174](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L174)
+Defined in: [src/shell/client/index.ts:174](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L174)
 
 ###### Parameters
 
@@ -2297,7 +2297,7 @@ CommandContext.setAuthCapability
 setCapabilities(capabilities: Set<string>): void;
 ```
 
-Defined in: [src/shell/client/index.ts:165](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L165)
+Defined in: [src/shell/client/index.ts:165](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L165)
 
 ###### Parameters
 
@@ -2321,7 +2321,7 @@ CommandContext.setCapabilities
 setExpectCapabilityUpdate(expect: boolean): void;
 ```
 
-Defined in: [src/shell/client/index.ts:178](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L178)
+Defined in: [src/shell/client/index.ts:178](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L178)
 
 ###### Parameters
 
@@ -2345,7 +2345,7 @@ CommandContext.setExpectCapabilityUpdate
 setFolder(path: MailboxPath, folder: MailboxListEntry): void;
 ```
 
-Defined in: [src/shell/client/index.ts:192](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L192)
+Defined in: [src/shell/client/index.ts:192](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L192)
 
 ###### Parameters
 
@@ -2370,7 +2370,7 @@ CommandContext.setFolder
 setMailbox(mailbox: MailboxInfo | null): void;
 ```
 
-Defined in: [src/shell/client/index.ts:182](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L182)
+Defined in: [src/shell/client/index.ts:182](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L182)
 
 ###### Parameters
 
@@ -2429,7 +2429,7 @@ EventEmitter.setMaxListeners
 write(data: string | Buffer<ArrayBufferLike>): void;
 ```
 
-Defined in: [src/shell/client/index.ts:336](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L336)
+Defined in: [src/shell/client/index.ts:336](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L336)
 
 ###### Parameters
 
@@ -3151,7 +3151,7 @@ EventEmitter.setMaxListeners
 
 ### IMAPSDKError
 
-Defined in: [src/types/errors.ts:35](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L35)
+Defined in: [src/types/errors.ts:35](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L35)
 
 #### Extends
 
@@ -3177,7 +3177,7 @@ new IMAPSDKError(
    options: IMAPSDKErrorOptions): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:47](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L47)
+Defined in: [src/types/errors.ts:47](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L47)
 
 ###### Parameters
 
@@ -3202,18 +3202,18 @@ Error.constructor
 | Property | Modifier | Type | Default value | Description | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | <a id="cause-2"></a> `cause?` | `public` | `unknown` | `undefined` | - | - | `Error.cause` | node\_modules/typescript/lib/lib.es2022.error.d.ts:26 |
-| <a id="code-2"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | - | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L37) |
-| <a id="extension-2"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | - | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L43) |
+| <a id="code-2"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | - | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L37) |
+| <a id="extension-2"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | - | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L43) |
 | <a id="message-2"></a> `message` | `public` | `string` | `undefined` | - | - | `Error.message` | node\_modules/typescript/lib/lib.es5.d.ts:1077 |
-| <a id="name-2"></a> `name` | `readonly` | `string` | `'IMAPSDKError'` | - | `Error.name` | - | [src/types/errors.ts:36](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L36) |
-| <a id="oautherror-2"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | - | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L39) |
-| <a id="parserinput-2"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | - | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L45) |
-| <a id="parserposition-2"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | - | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L44) |
-| <a id="responsestatus-2"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | - | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L40) |
-| <a id="responsetext-2"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | - | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L41) |
-| <a id="serverresponsecode-2"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | - | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L38) |
+| <a id="name-2"></a> `name` | `readonly` | `string` | `'IMAPSDKError'` | - | `Error.name` | - | [src/types/errors.ts:36](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L36) |
+| <a id="oautherror-2"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | - | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L39) |
+| <a id="parserinput-2"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | - | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L45) |
+| <a id="parserposition-2"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | - | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L44) |
+| <a id="responsestatus-2"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | - | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L40) |
+| <a id="responsetext-2"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | - | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L41) |
+| <a id="serverresponsecode-2"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | - | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L38) |
 | <a id="stack-2"></a> `stack?` | `public` | `string` | `undefined` | - | - | `Error.stack` | node\_modules/typescript/lib/lib.es5.d.ts:1078 |
-| <a id="throttlereset-2"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | - | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L42) |
+| <a id="throttlereset-2"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | - | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L42) |
 | <a id="stacktracelimit-2"></a> `stackTraceLimit` | `static` | `number` | `undefined` | The `Error.stackTraceLimit` property specifies the number of stack frames collected by a stack trace (whether generated by `new Error().stack` or `Error.captureStackTrace(obj)`). The default value is `10` but may be set to any valid JavaScript number. Changes will affect any stack trace captured _after_ the value has been changed. If set to a non-number value, or set to a negative number, stack traces will not capture any frames. | - | `Error.stackTraceLimit` | node\_modules/@types/node/globals.d.ts:68 |
 
 #### Methods
@@ -3227,7 +3227,7 @@ static authentication(
    oauthError?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L74)
+Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L74)
 
 ###### Parameters
 
@@ -3319,7 +3319,7 @@ static commandFailed(
    responseText?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L94)
+Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L94)
 
 ###### Parameters
 
@@ -3346,7 +3346,7 @@ static connection(code:
   | "UPGRADE_TIMEOUT", message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L60)
+Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L60)
 
 ###### Parameters
 
@@ -3365,7 +3365,7 @@ Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob
 static disposed(resource: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L120)
+Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L120)
 
 ###### Parameters
 
@@ -3383,7 +3383,7 @@ Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blo
 static internal(message: string, cause?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L124)
+Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L124)
 
 ###### Parameters
 
@@ -3402,7 +3402,7 @@ Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blo
 static invalidState(message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L116)
+Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L116)
 
 ###### Parameters
 
@@ -3446,7 +3446,7 @@ Error.isError
 static isIMAPSDKError(error: unknown): error is IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L128)
+Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L128)
 
 ###### Parameters
 
@@ -3464,7 +3464,7 @@ Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blo
 static missingExtension(message: string, extension: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L112)
+Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L112)
 
 ###### Parameters
 
@@ -3486,7 +3486,7 @@ static parser(
    input?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L101)
+Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L101)
 
 ###### Parameters
 
@@ -3539,7 +3539,7 @@ static protocol(
    serverResponseCode?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L81)
+Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L81)
 
 ###### Parameters
 
@@ -3560,7 +3560,7 @@ Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob
 static throttled(message: string, throttleReset: number): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L108)
+Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L108)
 
 ###### Parameters
 
@@ -3577,7 +3577,7 @@ Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blo
 
 ### MissingExtensionError
 
-Defined in: [src/types/errors.ts:214](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L214)
+Defined in: [src/types/errors.ts:214](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L214)
 
 #### Extends
 
@@ -3591,7 +3591,7 @@ Defined in: [src/types/errors.ts:214](https://github.com/marcoappio/imap-sdk/blo
 new MissingExtensionError(message: string, extension: string): MissingExtensionError;
 ```
 
-Defined in: [src/types/errors.ts:217](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L217)
+Defined in: [src/types/errors.ts:217](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L217)
 
 ###### Parameters
 
@@ -3613,18 +3613,18 @@ Defined in: [src/types/errors.ts:217](https://github.com/marcoappio/imap-sdk/blo
 | Property | Modifier | Type | Default value | Description | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | <a id="cause-3"></a> `cause?` | `public` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`cause`](#cause-2) | node\_modules/typescript/lib/lib.es2022.error.d.ts:26 |
-| <a id="code-3"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L37) |
-| <a id="extension-3"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L43) |
+| <a id="code-3"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L37) |
+| <a id="extension-3"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L43) |
 | <a id="message-3"></a> `message` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`message`](#message-2) | node\_modules/typescript/lib/lib.es5.d.ts:1077 |
-| <a id="name-3"></a> `name` | `readonly` | `"MissingExtensionError"` | `'MissingExtensionError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:215](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L215) |
-| <a id="oautherror-3"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L39) |
-| <a id="parserinput-3"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L45) |
-| <a id="parserposition-3"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L44) |
-| <a id="responsestatus-3"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L40) |
-| <a id="responsetext-3"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L41) |
-| <a id="serverresponsecode-3"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L38) |
+| <a id="name-3"></a> `name` | `readonly` | `"MissingExtensionError"` | `'MissingExtensionError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:215](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L215) |
+| <a id="oautherror-3"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L39) |
+| <a id="parserinput-3"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L45) |
+| <a id="parserposition-3"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L44) |
+| <a id="responsestatus-3"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L40) |
+| <a id="responsetext-3"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L41) |
+| <a id="serverresponsecode-3"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L38) |
 | <a id="stack-3"></a> `stack?` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`stack`](#stack-2) | node\_modules/typescript/lib/lib.es5.d.ts:1078 |
-| <a id="throttlereset-3"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L42) |
+| <a id="throttlereset-3"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L42) |
 | <a id="stacktracelimit-3"></a> `stackTraceLimit` | `static` | `number` | `undefined` | The `Error.stackTraceLimit` property specifies the number of stack frames collected by a stack trace (whether generated by `new Error().stack` or `Error.captureStackTrace(obj)`). The default value is `10` but may be set to any valid JavaScript number. Changes will affect any stack trace captured _after_ the value has been changed. If set to a non-number value, or set to a negative number, stack traces will not capture any frames. | - | [`IMAPSDKError`](#imapsdkerror).[`stackTraceLimit`](#stacktracelimit-2) | node\_modules/@types/node/globals.d.ts:68 |
 
 #### Methods
@@ -3638,7 +3638,7 @@ static authentication(
    oauthError?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L74)
+Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L74)
 
 ###### Parameters
 
@@ -3732,7 +3732,7 @@ static commandFailed(
    responseText?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L94)
+Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L94)
 
 ###### Parameters
 
@@ -3763,7 +3763,7 @@ static connection(code:
   | "UPGRADE_TIMEOUT", message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L60)
+Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L60)
 
 ###### Parameters
 
@@ -3786,7 +3786,7 @@ Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob
 static disposed(resource: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L120)
+Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L120)
 
 ###### Parameters
 
@@ -3808,7 +3808,7 @@ Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blo
 static internal(message: string, cause?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L124)
+Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L124)
 
 ###### Parameters
 
@@ -3831,7 +3831,7 @@ Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blo
 static invalidState(message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L116)
+Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L116)
 
 ###### Parameters
 
@@ -3877,7 +3877,7 @@ Indicates whether the argument provided is a built-in Error instance or not.
 static isIMAPSDKError(error: unknown): error is IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L128)
+Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L128)
 
 ###### Parameters
 
@@ -3899,7 +3899,7 @@ Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blo
 static missingExtension(message: string, extension: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L112)
+Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L112)
 
 ###### Parameters
 
@@ -3925,7 +3925,7 @@ static parser(
    input?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L101)
+Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L101)
 
 ###### Parameters
 
@@ -3980,7 +3980,7 @@ static protocol(
    serverResponseCode?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L81)
+Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L81)
 
 ###### Parameters
 
@@ -4005,7 +4005,7 @@ Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob
 static throttled(message: string, throttleReset: number): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L108)
+Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L108)
 
 ###### Parameters
 
@@ -4026,7 +4026,7 @@ Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blo
 
 ### ParserError
 
-Defined in: [src/types/errors.ts:188](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L188)
+Defined in: [src/types/errors.ts:188](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L188)
 
 #### Extends
 
@@ -4044,7 +4044,7 @@ new ParserError(
    input?: string): ParserError;
 ```
 
-Defined in: [src/types/errors.ts:192](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L192)
+Defined in: [src/types/errors.ts:192](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L192)
 
 ###### Parameters
 
@@ -4068,18 +4068,18 @@ Defined in: [src/types/errors.ts:192](https://github.com/marcoappio/imap-sdk/blo
 | Property | Modifier | Type | Default value | Description | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | <a id="cause-4"></a> `cause?` | `public` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`cause`](#cause-2) | node\_modules/typescript/lib/lib.es2022.error.d.ts:26 |
-| <a id="code-4"></a> `code` | `readonly` | `` `PARSER_${string}` `` | `undefined` | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | - | [src/types/errors.ts:190](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L190) |
-| <a id="extension-4"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L43) |
+| <a id="code-4"></a> `code` | `readonly` | `` `PARSER_${string}` `` | `undefined` | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | - | [src/types/errors.ts:190](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L190) |
+| <a id="extension-4"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L43) |
 | <a id="message-4"></a> `message` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`message`](#message-2) | node\_modules/typescript/lib/lib.es5.d.ts:1077 |
-| <a id="name-4"></a> `name` | `readonly` | `"ParserError"` | `'ParserError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:189](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L189) |
-| <a id="oautherror-4"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L39) |
-| <a id="parserinput-4"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L45) |
-| <a id="parserposition-4"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L44) |
-| <a id="responsestatus-4"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L40) |
-| <a id="responsetext-4"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L41) |
-| <a id="serverresponsecode-4"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L38) |
+| <a id="name-4"></a> `name` | `readonly` | `"ParserError"` | `'ParserError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:189](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L189) |
+| <a id="oautherror-4"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L39) |
+| <a id="parserinput-4"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L45) |
+| <a id="parserposition-4"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L44) |
+| <a id="responsestatus-4"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L40) |
+| <a id="responsetext-4"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L41) |
+| <a id="serverresponsecode-4"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L38) |
 | <a id="stack-4"></a> `stack?` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`stack`](#stack-2) | node\_modules/typescript/lib/lib.es5.d.ts:1078 |
-| <a id="throttlereset-4"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L42) |
+| <a id="throttlereset-4"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L42) |
 | <a id="stacktracelimit-4"></a> `stackTraceLimit` | `static` | `number` | `undefined` | The `Error.stackTraceLimit` property specifies the number of stack frames collected by a stack trace (whether generated by `new Error().stack` or `Error.captureStackTrace(obj)`). The default value is `10` but may be set to any valid JavaScript number. Changes will affect any stack trace captured _after_ the value has been changed. If set to a non-number value, or set to a negative number, stack traces will not capture any frames. | - | [`IMAPSDKError`](#imapsdkerror).[`stackTraceLimit`](#stacktracelimit-2) | node\_modules/@types/node/globals.d.ts:68 |
 
 #### Accessors
@@ -4092,7 +4092,7 @@ Defined in: [src/types/errors.ts:192](https://github.com/marcoappio/imap-sdk/blo
 get input(): string | undefined;
 ```
 
-Defined in: [src/types/errors.ts:201](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L201)
+Defined in: [src/types/errors.ts:201](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L201)
 
 ###### Returns
 
@@ -4106,7 +4106,7 @@ Defined in: [src/types/errors.ts:201](https://github.com/marcoappio/imap-sdk/blo
 get position(): number | undefined;
 ```
 
-Defined in: [src/types/errors.ts:197](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L197)
+Defined in: [src/types/errors.ts:197](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L197)
 
 ###### Returns
 
@@ -4123,7 +4123,7 @@ static authentication(
    oauthError?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L74)
+Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L74)
 
 ###### Parameters
 
@@ -4217,7 +4217,7 @@ static commandFailed(
    responseText?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L94)
+Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L94)
 
 ###### Parameters
 
@@ -4248,7 +4248,7 @@ static connection(code:
   | "UPGRADE_TIMEOUT", message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L60)
+Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L60)
 
 ###### Parameters
 
@@ -4271,7 +4271,7 @@ Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob
 static disposed(resource: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L120)
+Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L120)
 
 ###### Parameters
 
@@ -4293,7 +4293,7 @@ Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blo
 static internal(message: string, cause?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L124)
+Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L124)
 
 ###### Parameters
 
@@ -4316,7 +4316,7 @@ Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blo
 static invalidState(message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L116)
+Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L116)
 
 ###### Parameters
 
@@ -4362,7 +4362,7 @@ Indicates whether the argument provided is a built-in Error instance or not.
 static isIMAPSDKError(error: unknown): error is IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L128)
+Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L128)
 
 ###### Parameters
 
@@ -4384,7 +4384,7 @@ Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blo
 static missingExtension(message: string, extension: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L112)
+Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L112)
 
 ###### Parameters
 
@@ -4410,7 +4410,7 @@ static parser(
    input?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L101)
+Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L101)
 
 ###### Parameters
 
@@ -4465,7 +4465,7 @@ static protocol(
    serverResponseCode?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L81)
+Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L81)
 
 ###### Parameters
 
@@ -4490,7 +4490,7 @@ Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob
 static throttled(message: string, throttleReset: number): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L108)
+Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L108)
 
 ###### Parameters
 
@@ -4511,7 +4511,7 @@ Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blo
 
 ### ProtocolError
 
-Defined in: [src/types/errors.ts:180](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L180)
+Defined in: [src/types/errors.ts:180](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L180)
 
 #### Extends
 
@@ -4529,7 +4529,7 @@ new ProtocolError(
    serverResponseCode?: string): ProtocolError;
 ```
 
-Defined in: [src/types/errors.ts:183](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L183)
+Defined in: [src/types/errors.ts:183](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L183)
 
 ###### Parameters
 
@@ -4553,18 +4553,18 @@ Defined in: [src/types/errors.ts:183](https://github.com/marcoappio/imap-sdk/blo
 | Property | Modifier | Type | Default value | Description | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | <a id="cause-5"></a> `cause?` | `public` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`cause`](#cause-2) | node\_modules/typescript/lib/lib.es2022.error.d.ts:26 |
-| <a id="code-5"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L37) |
-| <a id="extension-5"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L43) |
+| <a id="code-5"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L37) |
+| <a id="extension-5"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L43) |
 | <a id="message-5"></a> `message` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`message`](#message-2) | node\_modules/typescript/lib/lib.es5.d.ts:1077 |
-| <a id="name-5"></a> `name` | `readonly` | `"ProtocolError"` | `'ProtocolError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:181](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L181) |
-| <a id="oautherror-5"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L39) |
-| <a id="parserinput-5"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L45) |
-| <a id="parserposition-5"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L44) |
-| <a id="responsestatus-5"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L40) |
-| <a id="responsetext-5"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L41) |
-| <a id="serverresponsecode-5"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L38) |
+| <a id="name-5"></a> `name` | `readonly` | `"ProtocolError"` | `'ProtocolError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:181](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L181) |
+| <a id="oautherror-5"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L39) |
+| <a id="parserinput-5"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L45) |
+| <a id="parserposition-5"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L44) |
+| <a id="responsestatus-5"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L40) |
+| <a id="responsetext-5"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L41) |
+| <a id="serverresponsecode-5"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L38) |
 | <a id="stack-5"></a> `stack?` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`stack`](#stack-2) | node\_modules/typescript/lib/lib.es5.d.ts:1078 |
-| <a id="throttlereset-5"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L42) |
+| <a id="throttlereset-5"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L42) |
 | <a id="stacktracelimit-5"></a> `stackTraceLimit` | `static` | `number` | `undefined` | The `Error.stackTraceLimit` property specifies the number of stack frames collected by a stack trace (whether generated by `new Error().stack` or `Error.captureStackTrace(obj)`). The default value is `10` but may be set to any valid JavaScript number. Changes will affect any stack trace captured _after_ the value has been changed. If set to a non-number value, or set to a negative number, stack traces will not capture any frames. | - | [`IMAPSDKError`](#imapsdkerror).[`stackTraceLimit`](#stacktracelimit-2) | node\_modules/@types/node/globals.d.ts:68 |
 
 #### Methods
@@ -4578,7 +4578,7 @@ static authentication(
    oauthError?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L74)
+Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L74)
 
 ###### Parameters
 
@@ -4672,7 +4672,7 @@ static commandFailed(
    responseText?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L94)
+Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L94)
 
 ###### Parameters
 
@@ -4703,7 +4703,7 @@ static connection(code:
   | "UPGRADE_TIMEOUT", message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L60)
+Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L60)
 
 ###### Parameters
 
@@ -4726,7 +4726,7 @@ Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob
 static disposed(resource: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L120)
+Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L120)
 
 ###### Parameters
 
@@ -4748,7 +4748,7 @@ Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blo
 static internal(message: string, cause?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L124)
+Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L124)
 
 ###### Parameters
 
@@ -4771,7 +4771,7 @@ Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blo
 static invalidState(message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L116)
+Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L116)
 
 ###### Parameters
 
@@ -4817,7 +4817,7 @@ Indicates whether the argument provided is a built-in Error instance or not.
 static isIMAPSDKError(error: unknown): error is IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L128)
+Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L128)
 
 ###### Parameters
 
@@ -4839,7 +4839,7 @@ Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blo
 static missingExtension(message: string, extension: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L112)
+Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L112)
 
 ###### Parameters
 
@@ -4865,7 +4865,7 @@ static parser(
    input?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L101)
+Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L101)
 
 ###### Parameters
 
@@ -4920,7 +4920,7 @@ static protocol(
    serverResponseCode?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L81)
+Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L81)
 
 ###### Parameters
 
@@ -4945,7 +4945,7 @@ Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob
 static throttled(message: string, throttleReset: number): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L108)
+Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L108)
 
 ###### Parameters
 
@@ -4966,7 +4966,7 @@ Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blo
 
 ### ThrottleError
 
-Defined in: [src/types/errors.ts:206](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L206)
+Defined in: [src/types/errors.ts:206](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L206)
 
 #### Extends
 
@@ -4980,7 +4980,7 @@ Defined in: [src/types/errors.ts:206](https://github.com/marcoappio/imap-sdk/blo
 new ThrottleError(message: string, throttleReset: number): ThrottleError;
 ```
 
-Defined in: [src/types/errors.ts:209](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L209)
+Defined in: [src/types/errors.ts:209](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L209)
 
 ###### Parameters
 
@@ -5002,18 +5002,18 @@ Defined in: [src/types/errors.ts:209](https://github.com/marcoappio/imap-sdk/blo
 | Property | Modifier | Type | Default value | Description | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | <a id="cause-6"></a> `cause?` | `public` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`cause`](#cause-2) | node\_modules/typescript/lib/lib.es2022.error.d.ts:26 |
-| <a id="code-6"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L37) |
-| <a id="extension-6"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L43) |
+| <a id="code-6"></a> `code` | `readonly` | \| `"AUTHENTICATION_FAILED"` \| `"COMMAND_FAILED"` \| `"CONNECT_TIMEOUT"` \| `"CONNECTION_CLOSED"` \| `"DISPOSED"` \| `"GREETING_TIMEOUT"` \| `"INTERNAL"` \| `"INVALID_STATE"` \| `"MISSING_EXTENSION"` \| `"NO_CONNECTION"` \| `"PROTOCOL_ERROR"` \| `"SOCKET_TIMEOUT"` \| `"THROTTLED"` \| `"TLS_FAILED"` \| `"UNKNOWN"` \| `"UPGRADE_TIMEOUT"` \| `` `PARSER_${string}` `` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`code`](#code-2) | [src/types/errors.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L37) |
+| <a id="extension-6"></a> `extension?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`extension`](#extension-2) | [src/types/errors.ts:43](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L43) |
 | <a id="message-6"></a> `message` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`message`](#message-2) | node\_modules/typescript/lib/lib.es5.d.ts:1077 |
-| <a id="name-6"></a> `name` | `readonly` | `"ThrottleError"` | `'ThrottleError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:207](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L207) |
-| <a id="oautherror-6"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L39) |
-| <a id="parserinput-6"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L45) |
-| <a id="parserposition-6"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L44) |
-| <a id="responsestatus-6"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L40) |
-| <a id="responsetext-6"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L41) |
-| <a id="serverresponsecode-6"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L38) |
+| <a id="name-6"></a> `name` | `readonly` | `"ThrottleError"` | `'ThrottleError'` | - | [`IMAPSDKError`](#imapsdkerror).[`name`](#name-2) | - | [src/types/errors.ts:207](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L207) |
+| <a id="oautherror-6"></a> `oauthError?` | `readonly` | `unknown` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`oauthError`](#oautherror-2) | [src/types/errors.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L39) |
+| <a id="parserinput-6"></a> `parserInput?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserInput`](#parserinput-2) | [src/types/errors.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L45) |
+| <a id="parserposition-6"></a> `parserPosition?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`parserPosition`](#parserposition-2) | [src/types/errors.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L44) |
+| <a id="responsestatus-6"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseStatus`](#responsestatus-2) | [src/types/errors.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L40) |
+| <a id="responsetext-6"></a> `responseText?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`responseText`](#responsetext-2) | [src/types/errors.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L41) |
+| <a id="serverresponsecode-6"></a> `serverResponseCode?` | `readonly` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`serverResponseCode`](#serverresponsecode-2) | [src/types/errors.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L38) |
 | <a id="stack-6"></a> `stack?` | `public` | `string` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`stack`](#stack-2) | node\_modules/typescript/lib/lib.es5.d.ts:1078 |
-| <a id="throttlereset-6"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L42) |
+| <a id="throttlereset-6"></a> `throttleReset?` | `readonly` | `number` | `undefined` | - | - | [`IMAPSDKError`](#imapsdkerror).[`throttleReset`](#throttlereset-2) | [src/types/errors.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L42) |
 | <a id="stacktracelimit-6"></a> `stackTraceLimit` | `static` | `number` | `undefined` | The `Error.stackTraceLimit` property specifies the number of stack frames collected by a stack trace (whether generated by `new Error().stack` or `Error.captureStackTrace(obj)`). The default value is `10` but may be set to any valid JavaScript number. Changes will affect any stack trace captured _after_ the value has been changed. If set to a non-number value, or set to a negative number, stack traces will not capture any frames. | - | [`IMAPSDKError`](#imapsdkerror).[`stackTraceLimit`](#stacktracelimit-2) | node\_modules/@types/node/globals.d.ts:68 |
 
 #### Methods
@@ -5027,7 +5027,7 @@ static authentication(
    oauthError?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L74)
+Defined in: [src/types/errors.ts:74](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L74)
 
 ###### Parameters
 
@@ -5121,7 +5121,7 @@ static commandFailed(
    responseText?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L94)
+Defined in: [src/types/errors.ts:94](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L94)
 
 ###### Parameters
 
@@ -5152,7 +5152,7 @@ static connection(code:
   | "UPGRADE_TIMEOUT", message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L60)
+Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L60)
 
 ###### Parameters
 
@@ -5175,7 +5175,7 @@ Defined in: [src/types/errors.ts:60](https://github.com/marcoappio/imap-sdk/blob
 static disposed(resource: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L120)
+Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L120)
 
 ###### Parameters
 
@@ -5197,7 +5197,7 @@ Defined in: [src/types/errors.ts:120](https://github.com/marcoappio/imap-sdk/blo
 static internal(message: string, cause?: unknown): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L124)
+Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L124)
 
 ###### Parameters
 
@@ -5220,7 +5220,7 @@ Defined in: [src/types/errors.ts:124](https://github.com/marcoappio/imap-sdk/blo
 static invalidState(message: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L116)
+Defined in: [src/types/errors.ts:116](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L116)
 
 ###### Parameters
 
@@ -5266,7 +5266,7 @@ Indicates whether the argument provided is a built-in Error instance or not.
 static isIMAPSDKError(error: unknown): error is IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L128)
+Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L128)
 
 ###### Parameters
 
@@ -5288,7 +5288,7 @@ Defined in: [src/types/errors.ts:128](https://github.com/marcoappio/imap-sdk/blo
 static missingExtension(message: string, extension: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L112)
+Defined in: [src/types/errors.ts:112](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L112)
 
 ###### Parameters
 
@@ -5314,7 +5314,7 @@ static parser(
    input?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L101)
+Defined in: [src/types/errors.ts:101](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L101)
 
 ###### Parameters
 
@@ -5369,7 +5369,7 @@ static protocol(
    serverResponseCode?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L81)
+Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L81)
 
 ###### Parameters
 
@@ -5394,7 +5394,7 @@ Defined in: [src/types/errors.ts:81](https://github.com/marcoappio/imap-sdk/blob
 static throttled(message: string, throttleReset: number): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L108)
+Defined in: [src/types/errors.ts:108](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L108)
 
 ###### Parameters
 
@@ -5422,14 +5422,14 @@ type Address = {
 };
 ```
 
-Defined in: [src/types/message.ts:3](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L3)
+Defined in: [src/types/message.ts:3](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L3)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="address-1"></a> `address?` | `readonly` | `string` | [src/types/message.ts:5](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L5) |
-| <a id="name-7"></a> `name?` | `readonly` | `string` | [src/types/message.ts:4](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L4) |
+| <a id="address-1"></a> `address?` | `readonly` | `string` | [src/types/message.ts:5](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L5) |
+| <a id="name-7"></a> `name?` | `readonly` | `string` | [src/types/message.ts:4](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L4) |
 
 ***
 
@@ -5442,14 +5442,14 @@ type AppendOptions = {
 };
 ```
 
-Defined in: [src/types/message.ts:74](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L74)
+Defined in: [src/types/message.ts:74](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L74)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="date"></a> `date?` | `readonly` | `Date` | [src/types/message.ts:76](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L76) |
-| <a id="flags"></a> `flags?` | `readonly` | readonly `string`[] | [src/types/message.ts:75](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L75) |
+| <a id="date"></a> `date?` | `readonly` | `Date` | [src/types/message.ts:76](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L76) |
+| <a id="flags"></a> `flags?` | `readonly` | readonly `string`[] | [src/types/message.ts:75](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L75) |
 
 ***
 
@@ -5465,17 +5465,17 @@ type AuthOptions = {
 };
 ```
 
-Defined in: [src/types/connection.ts:36](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L36)
+Defined in: [src/types/connection.ts:36](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L36)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="accesstoken"></a> `accessToken?` | `readonly` | `string` | [src/types/connection.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L39) |
-| <a id="authzid"></a> `authzid?` | `readonly` | `string` | [src/types/connection.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L41) |
-| <a id="loginmethod"></a> `loginMethod?` | `readonly` | `string` | [src/types/connection.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L40) |
-| <a id="pass"></a> `pass?` | `readonly` | `string` | [src/types/connection.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L38) |
-| <a id="user"></a> `user` | `readonly` | `string` | [src/types/connection.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L37) |
+| <a id="accesstoken"></a> `accessToken?` | `readonly` | `string` | [src/types/connection.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L39) |
+| <a id="authzid"></a> `authzid?` | `readonly` | `string` | [src/types/connection.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L41) |
+| <a id="loginmethod"></a> `loginMethod?` | `readonly` | `string` | [src/types/connection.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L40) |
+| <a id="pass"></a> `pass?` | `readonly` | `string` | [src/types/connection.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L38) |
+| <a id="user"></a> `user` | `readonly` | `string` | [src/types/connection.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L37) |
 
 ***
 
@@ -5487,13 +5487,13 @@ type Brand<T, B> = T & {
 };
 ```
 
-Defined in: [src/types/brand.ts:3](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/brand.ts#L3)
+Defined in: [src/types/brand.ts:3](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/brand.ts#L3)
 
 #### Type Declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `[___brand]` | `B` | [src/types/brand.ts:3](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/brand.ts#L3) |
+| `[___brand]` | `B` | [src/types/brand.ts:3](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/brand.ts#L3) |
 
 #### Type Parameters
 
@@ -5542,7 +5542,7 @@ type CommandAttribute =
   | readonly CommandAttribute[];
 ```
 
-Defined in: [src/types/protocol.ts:22](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L22)
+Defined in: [src/types/protocol.ts:22](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L22)
 
 ***
 
@@ -5591,36 +5591,36 @@ type CommandContext = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:26](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L26)
+Defined in: [src/shell/commands/types.ts:26](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L26)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="addenabled-2"></a> `addEnabled` | `public` | (`extension`: `string`) => `void` | [src/shell/commands/types.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L41) |
-| <a id="authcapabilities-1"></a> `authCapabilities` | `readonly` | `ReadonlyMap`\<`string`, `boolean`\> | [src/shell/commands/types.ts:32](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L32) |
-| <a id="capabilities-1"></a> `capabilities` | `readonly` | `ReadonlySet`\<`string`\> | [src/shell/commands/types.ts:30](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L30) |
-| <a id="emitexists-2"></a> `emitExists` | `public` | (`info`: \{ `count`: `number`; `path`: [`MailboxPath`](#mailboxpath); `prevCount`: `number`; \}) => `void` | [src/shell/commands/types.ts:56](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L56) |
-| <a id="emitexpunge-2"></a> `emitExpunge` | `public` | (`info`: \{ `path`: [`MailboxPath`](#mailboxpath); `seq`: `number`; `vanished`: `boolean`; \}) => `void` | [src/shell/commands/types.ts:57](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L57) |
-| <a id="emitflags-2"></a> `emitFlags` | `public` | (`info`: \{ `flags`: `Set`\<`string`\>; `modseq?`: [`ModSeq`](#modseq-2); `path`: [`MailboxPath`](#mailboxpath); `seq`: `number`; `uid?`: `number`; \}) => `void` | [src/shell/commands/types.ts:58](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L58) |
-| <a id="emitmailboxclose-2"></a> `emitMailboxClose` | `public` | (`mailbox`: [`MailboxInfo`](#mailboxinfo)) => `void` | [src/shell/commands/types.ts:55](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L55) |
-| <a id="emitmailboxopen-2"></a> `emitMailboxOpen` | `public` | (`mailbox`: [`MailboxInfo`](#mailboxinfo)) => `void` | [src/shell/commands/types.ts:54](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L54) |
-| <a id="enabled-1"></a> `enabled` | `readonly` | `ReadonlySet`\<`string`\> | [src/shell/commands/types.ts:31](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L31) |
-| <a id="exec-2"></a> `exec` | `public` | (`command`: `string`, `attributes?`: readonly [`CommandAttribute`](#commandattribute)[], `options?`: [`ExecOptions`](#execoptions)) => `Promise`\<[`ExecResponse`](#execresponse)\> | [src/shell/commands/types.ts:47](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L47) |
-| <a id="expectcapabilityupdate-1"></a> `expectCapabilityUpdate` | `readonly` | `boolean` | [src/shell/commands/types.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L45) |
-| <a id="folders-1"></a> `folders` | `readonly` | `ReadonlyMap`\<[`MailboxPath`](#mailboxpath), [`MailboxListEntry`](#mailboxlistentry)\> | [src/shell/commands/types.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L38) |
-| <a id="id-1"></a> `id` | `readonly` | `string` | [src/shell/commands/types.ts:27](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L27) |
-| <a id="log-1"></a> `log` | `readonly` | [`Logger`](#logger-1) | [src/shell/commands/types.ts:28](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L28) |
-| <a id="mailbox-1"></a> `mailbox` | `readonly` | [`MailboxInfo`](#mailboxinfo) \| `null` | [src/shell/commands/types.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L37) |
-| <a id="run-2"></a> `run` | `public` | \<`T`\>(`command`: `string`, ...`args`: `unknown`[]) => `Promise`\<`T`\> | [src/shell/commands/types.ts:49](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L49) |
-| <a id="servername-1"></a> `servername` | `readonly` | `string` | [src/shell/commands/types.ts:33](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L33) |
-| <a id="setauthcapability-2"></a> `setAuthCapability` | `public` | (`method`: `string`, `success`: `boolean`) => `void` | [src/shell/commands/types.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L42) |
-| <a id="setcapabilities-2"></a> `setCapabilities` | `public` | (`capabilities`: `Set`\<`string`\>) => `void` | [src/shell/commands/types.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L40) |
-| <a id="setexpectcapabilityupdate-2"></a> `setExpectCapabilityUpdate` | `public` | (`expect`: `boolean`) => `void` | [src/shell/commands/types.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L44) |
-| <a id="setfolder-2"></a> `setFolder` | `public` | (`path`: [`MailboxPath`](#mailboxpath), `folder`: [`MailboxListEntry`](#mailboxlistentry)) => `void` | [src/shell/commands/types.ts:52](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L52) |
-| <a id="setmailbox-2"></a> `setMailbox` | `public` | (`mailbox`: [`MailboxInfo`](#mailboxinfo) \| `null`) => `void` | [src/shell/commands/types.ts:51](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L51) |
-| <a id="state-1"></a> `state` | `readonly` | [`CommandContextState`](#commandcontextstate-1) | [src/shell/commands/types.ts:35](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L35) |
-| <a id="write-2"></a> `write` | `public` | (`data`: `string` \| `Buffer`) => `void` | [src/shell/commands/types.ts:48](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L48) |
+| <a id="addenabled-2"></a> `addEnabled` | `public` | (`extension`: `string`) => `void` | [src/shell/commands/types.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L41) |
+| <a id="authcapabilities-1"></a> `authCapabilities` | `readonly` | `ReadonlyMap`\<`string`, `boolean`\> | [src/shell/commands/types.ts:32](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L32) |
+| <a id="capabilities-1"></a> `capabilities` | `readonly` | `ReadonlySet`\<`string`\> | [src/shell/commands/types.ts:30](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L30) |
+| <a id="emitexists-2"></a> `emitExists` | `public` | (`info`: \{ `count`: `number`; `path`: [`MailboxPath`](#mailboxpath); `prevCount`: `number`; \}) => `void` | [src/shell/commands/types.ts:56](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L56) |
+| <a id="emitexpunge-2"></a> `emitExpunge` | `public` | (`info`: \{ `path`: [`MailboxPath`](#mailboxpath); `seq`: `number`; `vanished`: `boolean`; \}) => `void` | [src/shell/commands/types.ts:57](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L57) |
+| <a id="emitflags-2"></a> `emitFlags` | `public` | (`info`: \{ `flags`: `Set`\<`string`\>; `modseq?`: [`ModSeq`](#modseq-2); `path`: [`MailboxPath`](#mailboxpath); `seq`: `number`; `uid?`: `number`; \}) => `void` | [src/shell/commands/types.ts:58](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L58) |
+| <a id="emitmailboxclose-2"></a> `emitMailboxClose` | `public` | (`mailbox`: [`MailboxInfo`](#mailboxinfo)) => `void` | [src/shell/commands/types.ts:55](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L55) |
+| <a id="emitmailboxopen-2"></a> `emitMailboxOpen` | `public` | (`mailbox`: [`MailboxInfo`](#mailboxinfo)) => `void` | [src/shell/commands/types.ts:54](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L54) |
+| <a id="enabled-1"></a> `enabled` | `readonly` | `ReadonlySet`\<`string`\> | [src/shell/commands/types.ts:31](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L31) |
+| <a id="exec-2"></a> `exec` | `public` | (`command`: `string`, `attributes?`: readonly [`CommandAttribute`](#commandattribute)[], `options?`: [`ExecOptions`](#execoptions)) => `Promise`\<[`ExecResponse`](#execresponse)\> | [src/shell/commands/types.ts:47](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L47) |
+| <a id="expectcapabilityupdate-1"></a> `expectCapabilityUpdate` | `readonly` | `boolean` | [src/shell/commands/types.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L45) |
+| <a id="folders-1"></a> `folders` | `readonly` | `ReadonlyMap`\<[`MailboxPath`](#mailboxpath), [`MailboxListEntry`](#mailboxlistentry)\> | [src/shell/commands/types.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L38) |
+| <a id="id-1"></a> `id` | `readonly` | `string` | [src/shell/commands/types.ts:27](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L27) |
+| <a id="log-1"></a> `log` | `readonly` | [`Logger`](#logger-1) | [src/shell/commands/types.ts:28](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L28) |
+| <a id="mailbox-1"></a> `mailbox` | `readonly` | [`MailboxInfo`](#mailboxinfo) \| `null` | [src/shell/commands/types.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L37) |
+| <a id="run-2"></a> `run` | `public` | \<`T`\>(`command`: `string`, ...`args`: `unknown`[]) => `Promise`\<`T`\> | [src/shell/commands/types.ts:49](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L49) |
+| <a id="servername-1"></a> `servername` | `readonly` | `string` | [src/shell/commands/types.ts:33](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L33) |
+| <a id="setauthcapability-2"></a> `setAuthCapability` | `public` | (`method`: `string`, `success`: `boolean`) => `void` | [src/shell/commands/types.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L42) |
+| <a id="setcapabilities-2"></a> `setCapabilities` | `public` | (`capabilities`: `Set`\<`string`\>) => `void` | [src/shell/commands/types.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L40) |
+| <a id="setexpectcapabilityupdate-2"></a> `setExpectCapabilityUpdate` | `public` | (`expect`: `boolean`) => `void` | [src/shell/commands/types.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L44) |
+| <a id="setfolder-2"></a> `setFolder` | `public` | (`path`: [`MailboxPath`](#mailboxpath), `folder`: [`MailboxListEntry`](#mailboxlistentry)) => `void` | [src/shell/commands/types.ts:52](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L52) |
+| <a id="setmailbox-2"></a> `setMailbox` | `public` | (`mailbox`: [`MailboxInfo`](#mailboxinfo) \| `null`) => `void` | [src/shell/commands/types.ts:51](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L51) |
+| <a id="state-1"></a> `state` | `readonly` | [`CommandContextState`](#commandcontextstate-1) | [src/shell/commands/types.ts:35](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L35) |
+| <a id="write-2"></a> `write` | `public` | (`data`: `string` \| `Buffer`) => `void` | [src/shell/commands/types.ts:48](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L48) |
 
 ***
 
@@ -5630,7 +5630,7 @@ Defined in: [src/shell/commands/types.ts:26](https://github.com/marcoappio/imap-
 type CommandContextState = "NOT_AUTHENTICATED" | "AUTHENTICATED" | "SELECTED" | "LOGOUT";
 ```
 
-Defined in: [src/shell/commands/types.ts:61](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L61)
+Defined in: [src/shell/commands/types.ts:61](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L61)
 
 ***
 
@@ -5647,7 +5647,7 @@ type ConnectionErrorCode =
   | typeof TLS_FAILED;
 ```
 
-Defined in: [src/types/errors.ts:154](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L154)
+Defined in: [src/types/errors.ts:154](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L154)
 
 ***
 
@@ -5688,7 +5688,7 @@ type ConnectionEvent =
 };
 ```
 
-Defined in: [src/types/connection.ts:25](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L25)
+Defined in: [src/types/connection.ts:25](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L25)
 
 ***
 
@@ -5707,7 +5707,7 @@ type ConnectionEventType =
   | "ERROR";
 ```
 
-Defined in: [src/types/connection.ts:14](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L14)
+Defined in: [src/types/connection.ts:14](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L14)
 
 ***
 
@@ -5717,7 +5717,7 @@ Defined in: [src/types/connection.ts:14](https://github.com/marcoappio/imap-sdk/
 type ConnectionId = Brand<string, "ConnectionId">;
 ```
 
-Defined in: [src/types/common.ts:10](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L10)
+Defined in: [src/types/common.ts:10](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L10)
 
 ***
 
@@ -5736,20 +5736,20 @@ type ConnectionInfo = {
 };
 ```
 
-Defined in: [src/types/connection.ts:80](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L80)
+Defined in: [src/types/connection.ts:80](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L80)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="capabilities-2"></a> `capabilities` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/connection.ts:87](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L87) |
-| <a id="enabled-2"></a> `enabled` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/connection.ts:88](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L88) |
-| <a id="greeting"></a> `greeting?` | `readonly` | `string` | [src/types/connection.ts:85](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L85) |
-| <a id="host"></a> `host` | `readonly` | `string` | [src/types/connection.ts:82](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L82) |
-| <a id="id-2"></a> `id` | `readonly` | [`ConnectionId`](#connectionid) | [src/types/connection.ts:81](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L81) |
-| <a id="port"></a> `port` | `readonly` | `number` | [src/types/connection.ts:83](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L83) |
-| <a id="secure"></a> `secure` | `readonly` | `boolean` | [src/types/connection.ts:84](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L84) |
-| <a id="serverinfo"></a> `serverInfo?` | `readonly` | [`IdInfo`](#idinfo) | [src/types/connection.ts:86](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L86) |
+| <a id="capabilities-2"></a> `capabilities` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/connection.ts:87](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L87) |
+| <a id="enabled-2"></a> `enabled` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/connection.ts:88](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L88) |
+| <a id="greeting"></a> `greeting?` | `readonly` | `string` | [src/types/connection.ts:85](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L85) |
+| <a id="host"></a> `host` | `readonly` | `string` | [src/types/connection.ts:82](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L82) |
+| <a id="id-2"></a> `id` | `readonly` | [`ConnectionId`](#connectionid) | [src/types/connection.ts:81](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L81) |
+| <a id="port"></a> `port` | `readonly` | `number` | [src/types/connection.ts:83](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L83) |
+| <a id="secure"></a> `secure` | `readonly` | `boolean` | [src/types/connection.ts:84](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L84) |
+| <a id="serverinfo"></a> `serverInfo?` | `readonly` | [`IdInfo`](#idinfo) | [src/types/connection.ts:86](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L86) |
 
 ***
 
@@ -5783,35 +5783,35 @@ type ConnectionOptions = {
 };
 ```
 
-Defined in: [src/types/connection.ts:54](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L54)
+Defined in: [src/types/connection.ts:54](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L54)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="auth"></a> `auth?` | `readonly` | [`AuthOptions`](#authoptions) | [src/types/connection.ts:60](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L60) |
-| <a id="clientinfo"></a> `clientInfo?` | `readonly` | [`IdInfo`](#idinfo) | [src/types/connection.ts:74](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L74) |
-| <a id="connectiontimeout"></a> `connectionTimeout?` | `readonly` | `number` | [src/types/connection.ts:70](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L70) |
-| <a id="disableautoenable"></a> `disableAutoEnable?` | `readonly` | `boolean` | [src/types/connection.ts:66](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L66) |
-| <a id="disableautoidle"></a> `disableAutoIdle?` | `readonly` | `boolean` | [src/types/connection.ts:64](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L64) |
-| <a id="disablebinary"></a> `disableBinary?` | `readonly` | `boolean` | [src/types/connection.ts:65](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L65) |
-| <a id="disablecompression"></a> `disableCompression?` | `readonly` | `boolean` | [src/types/connection.ts:63](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L63) |
-| <a id="dostarttls"></a> `doSTARTTLS?` | `readonly` | `boolean` | [src/types/connection.ts:58](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L58) |
-| <a id="emitlogs"></a> `emitLogs?` | `readonly` | `boolean` | [src/types/connection.ts:77](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L77) |
-| <a id="greetingtimeout"></a> `greetingTimeout?` | `readonly` | `number` | [src/types/connection.ts:71](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L71) |
-| <a id="host-1"></a> `host` | `readonly` | `string` | [src/types/connection.ts:55](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L55) |
-| <a id="logger"></a> `logger?` | `readonly` | [`Logger`](#logger-1) \| `false` | [src/types/connection.ts:75](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L75) |
-| <a id="lograw"></a> `logRaw?` | `readonly` | `boolean` | [src/types/connection.ts:76](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L76) |
-| <a id="maxidletime"></a> `maxIdleTime?` | `readonly` | `number` | [src/types/connection.ts:68](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L68) |
-| <a id="missingidlecommand"></a> `missingIdleCommand?` | `readonly` | `"NOOP"` \| `"SELECT"` \| `"STATUS"` | [src/types/connection.ts:69](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L69) |
-| <a id="port-1"></a> `port` | `readonly` | `number` | [src/types/connection.ts:56](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L56) |
-| <a id="proxy"></a> `proxy?` | `readonly` | `string` | [src/types/connection.ts:62](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L62) |
-| <a id="qresync"></a> `qresync?` | `readonly` | `boolean` | [src/types/connection.ts:67](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L67) |
-| <a id="secure-1"></a> `secure?` | `readonly` | `boolean` | [src/types/connection.ts:57](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L57) |
-| <a id="servername-2"></a> `servername?` | `readonly` | `string` | [src/types/connection.ts:59](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L59) |
-| <a id="sockettimeout"></a> `socketTimeout?` | `readonly` | `number` | [src/types/connection.ts:72](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L72) |
-| <a id="tls"></a> `tls?` | `readonly` | `TlsOptions` | [src/types/connection.ts:61](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L61) |
-| <a id="verifyonly"></a> `verifyOnly?` | `readonly` | `boolean` | [src/types/connection.ts:73](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L73) |
+| <a id="auth"></a> `auth?` | `readonly` | [`AuthOptions`](#authoptions) | [src/types/connection.ts:60](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L60) |
+| <a id="clientinfo"></a> `clientInfo?` | `readonly` | [`IdInfo`](#idinfo) | [src/types/connection.ts:74](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L74) |
+| <a id="connectiontimeout"></a> `connectionTimeout?` | `readonly` | `number` | [src/types/connection.ts:70](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L70) |
+| <a id="disableautoenable"></a> `disableAutoEnable?` | `readonly` | `boolean` | [src/types/connection.ts:66](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L66) |
+| <a id="disableautoidle"></a> `disableAutoIdle?` | `readonly` | `boolean` | [src/types/connection.ts:64](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L64) |
+| <a id="disablebinary"></a> `disableBinary?` | `readonly` | `boolean` | [src/types/connection.ts:65](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L65) |
+| <a id="disablecompression"></a> `disableCompression?` | `readonly` | `boolean` | [src/types/connection.ts:63](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L63) |
+| <a id="dostarttls"></a> `doSTARTTLS?` | `readonly` | `boolean` | [src/types/connection.ts:58](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L58) |
+| <a id="emitlogs"></a> `emitLogs?` | `readonly` | `boolean` | [src/types/connection.ts:77](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L77) |
+| <a id="greetingtimeout"></a> `greetingTimeout?` | `readonly` | `number` | [src/types/connection.ts:71](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L71) |
+| <a id="host-1"></a> `host` | `readonly` | `string` | [src/types/connection.ts:55](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L55) |
+| <a id="logger"></a> `logger?` | `readonly` | [`Logger`](#logger-1) \| `false` | [src/types/connection.ts:75](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L75) |
+| <a id="lograw"></a> `logRaw?` | `readonly` | `boolean` | [src/types/connection.ts:76](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L76) |
+| <a id="maxidletime"></a> `maxIdleTime?` | `readonly` | `number` | [src/types/connection.ts:68](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L68) |
+| <a id="missingidlecommand"></a> `missingIdleCommand?` | `readonly` | `"NOOP"` \| `"SELECT"` \| `"STATUS"` | [src/types/connection.ts:69](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L69) |
+| <a id="port-1"></a> `port` | `readonly` | `number` | [src/types/connection.ts:56](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L56) |
+| <a id="proxy"></a> `proxy?` | `readonly` | `string` | [src/types/connection.ts:62](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L62) |
+| <a id="qresync"></a> `qresync?` | `readonly` | `boolean` | [src/types/connection.ts:67](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L67) |
+| <a id="secure-1"></a> `secure?` | `readonly` | `boolean` | [src/types/connection.ts:57](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L57) |
+| <a id="servername-2"></a> `servername?` | `readonly` | `string` | [src/types/connection.ts:59](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L59) |
+| <a id="sockettimeout"></a> `socketTimeout?` | `readonly` | `number` | [src/types/connection.ts:72](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L72) |
+| <a id="tls"></a> `tls?` | `readonly` | `TlsOptions` | [src/types/connection.ts:61](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L61) |
+| <a id="verifyonly"></a> `verifyOnly?` | `readonly` | `boolean` | [src/types/connection.ts:73](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L73) |
 
 ***
 
@@ -5844,7 +5844,7 @@ type ConnectionState =
 };
 ```
 
-Defined in: [src/types/connection.ts:6](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L6)
+Defined in: [src/types/connection.ts:6](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L6)
 
 ***
 
@@ -5856,13 +5856,13 @@ type CopyOptions = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:143](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L143)
+Defined in: [src/shell/commands/types.ts:143](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L143)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="uid"></a> `uid?` | `readonly` | `boolean` | [src/shell/commands/types.ts:144](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L144) |
+| <a id="uid"></a> `uid?` | `readonly` | `boolean` | [src/shell/commands/types.ts:144](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L144) |
 
 ***
 
@@ -5876,15 +5876,15 @@ type CopyResponse = {
 };
 ```
 
-Defined in: [src/types/message.ts:79](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L79)
+Defined in: [src/types/message.ts:79](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L79)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `readonly` | `string` | [src/types/message.ts:80](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L80) |
-| <a id="uidmap"></a> `uidMap` | `readonly` | `ReadonlyMap`\<`number`, `number`\> | [src/types/message.ts:82](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L82) |
-| <a id="uidvalidity"></a> `uidValidity` | `readonly` | `bigint` | [src/types/message.ts:81](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L81) |
+| <a id="path"></a> `path` | `readonly` | `string` | [src/types/message.ts:80](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L80) |
+| <a id="uidmap"></a> `uidMap` | `readonly` | `ReadonlyMap`\<`number`, `number`\> | [src/types/message.ts:82](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L82) |
+| <a id="uidvalidity"></a> `uidValidity` | `readonly` | `bigint` | [src/types/message.ts:81](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L81) |
 
 ***
 
@@ -5901,7 +5901,7 @@ type CopyResult =
   | false;
 ```
 
-Defined in: [src/shell/commands/types.ts:147](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L147)
+Defined in: [src/shell/commands/types.ts:147](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L147)
 
 ***
 
@@ -5914,7 +5914,7 @@ type ErrResult<E> = {
 };
 ```
 
-Defined in: [src/types/result.ts:2](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L2)
+Defined in: [src/types/result.ts:2](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L2)
 
 #### Type Parameters
 
@@ -5926,8 +5926,8 @@ Defined in: [src/types/result.ts:2](https://github.com/marcoappio/imap-sdk/blob/
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="error"></a> `error` | `readonly` | `E` | [src/types/result.ts:2](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L2) |
-| <a id="ok"></a> `ok` | `readonly` | `false` | [src/types/result.ts:2](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L2) |
+| <a id="error"></a> `error` | `readonly` | `E` | [src/types/result.ts:2](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L2) |
+| <a id="ok"></a> `ok` | `readonly` | `false` | [src/types/result.ts:2](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L2) |
 
 ***
 
@@ -5941,15 +5941,15 @@ type ExecOptions = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:14](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L14)
+Defined in: [src/shell/commands/types.ts:14](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L14)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="comment"></a> `comment?` | `readonly` | `string` | [src/shell/commands/types.ts:17](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L17) |
-| <a id="onplustag"></a> `onPlusTag?` | `readonly` | [`PlusTagHandler`](#plustaghandler) | [src/shell/commands/types.ts:16](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L16) |
-| <a id="untagged"></a> `untagged?` | `readonly` | [`UntaggedHandlers`](#untaggedhandlers) | [src/shell/commands/types.ts:15](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L15) |
+| <a id="comment"></a> `comment?` | `readonly` | `string` | [src/shell/commands/types.ts:17](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L17) |
+| <a id="onplustag"></a> `onPlusTag?` | `readonly` | [`PlusTagHandler`](#plustaghandler) | [src/shell/commands/types.ts:16](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L16) |
+| <a id="untagged"></a> `untagged?` | `readonly` | [`UntaggedHandlers`](#untaggedhandlers) | [src/shell/commands/types.ts:15](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L15) |
 
 ***
 
@@ -5963,15 +5963,15 @@ type ExecResponse = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:20](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L20)
+Defined in: [src/shell/commands/types.ts:20](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L20)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="next"></a> `next` | `readonly` | () => `void` | [src/shell/commands/types.ts:23](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L23) |
-| <a id="response"></a> `response` | `readonly` | [`ParsedResponse`](#parsedresponse) | [src/shell/commands/types.ts:22](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L22) |
-| <a id="tag"></a> `tag` | `readonly` | [`Tag`](#tag-2) | [src/shell/commands/types.ts:21](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L21) |
+| <a id="next"></a> `next` | `readonly` | () => `void` | [src/shell/commands/types.ts:23](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L23) |
+| <a id="response"></a> `response` | `readonly` | [`ParsedResponse`](#parsedresponse) | [src/shell/commands/types.ts:22](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L22) |
+| <a id="tag"></a> `tag` | `readonly` | [`Tag`](#tag-2) | [src/shell/commands/types.ts:21](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L21) |
 
 ***
 
@@ -5983,13 +5983,13 @@ type ExpungeOptions = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:178](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L178)
+Defined in: [src/shell/commands/types.ts:178](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L178)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="uid-1"></a> `uid?` | `readonly` | `boolean` | [src/shell/commands/types.ts:179](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L179) |
+| <a id="uid-1"></a> `uid?` | `readonly` | `boolean` | [src/shell/commands/types.ts:179](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L179) |
 
 ***
 
@@ -6016,28 +6016,52 @@ type FetchedMessage = {
 };
 ```
 
-Defined in: [src/types/message.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L39)
+Defined in: [src/types/message.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L39)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="bodyparts"></a> `bodyParts?` | `readonly` | `ReadonlyMap`\<`string`, `Buffer`\> | [src/types/message.ts:54](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L54) |
-| <a id="bodystructure"></a> `bodyStructure?` | `readonly` | [`MessageStructure`](#messagestructure) | [src/types/message.ts:52](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L52) |
-| <a id="emailid"></a> `emailId?` | `readonly` | `string` | [src/types/message.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L45) |
-| <a id="envelope"></a> `envelope?` | `readonly` | [`MessageEnvelope`](#messageenvelope) | [src/types/message.ts:51](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L51) |
-| <a id="flagcolor"></a> `flagColor?` | `readonly` | [`FlagColor`](#flagcolor-1) | [src/types/message.ts:50](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L50) |
-| <a id="flags-1"></a> `flags?` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/message.ts:49](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L49) |
-| <a id="headers"></a> `headers?` | `readonly` | `Buffer` | [src/types/message.ts:55](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L55) |
-| <a id="id-3"></a> `id?` | `readonly` | `string` | [src/types/message.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L42) |
-| <a id="internaldate"></a> `internalDate?` | `readonly` | `Date` | [src/types/message.ts:53](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L53) |
-| <a id="labels"></a> `labels?` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/message.ts:47](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L47) |
-| <a id="modseq"></a> `modseq?` | `readonly` | [`ModSeq`](#modseq-2) | [src/types/message.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L44) |
-| <a id="seq"></a> `seq` | `readonly` | [`SequenceNumber`](#sequencenumber) | [src/types/message.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L40) |
-| <a id="size"></a> `size?` | `readonly` | `number` | [src/types/message.ts:48](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L48) |
-| <a id="source"></a> `source?` | `readonly` | `Buffer` | [src/types/message.ts:43](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L43) |
-| <a id="threadid"></a> `threadId?` | `readonly` | `string` | [src/types/message.ts:46](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L46) |
-| <a id="uid-2"></a> `uid` | `readonly` | [`UID`](#uid-8) | [src/types/message.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L41) |
+| <a id="bodyparts"></a> `bodyParts?` | `readonly` | `ReadonlyMap`\<`string`, `Buffer`\> | [src/types/message.ts:54](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L54) |
+| <a id="bodystructure"></a> `bodyStructure?` | `readonly` | [`MessageStructure`](#messagestructure) | [src/types/message.ts:52](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L52) |
+| <a id="emailid"></a> `emailId?` | `readonly` | `string` | [src/types/message.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L45) |
+| <a id="envelope"></a> `envelope?` | `readonly` | [`MessageEnvelope`](#messageenvelope) | [src/types/message.ts:51](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L51) |
+| <a id="flagcolor"></a> `flagColor?` | `readonly` | [`FlagColor`](#flagcolor-1) | [src/types/message.ts:50](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L50) |
+| <a id="flags-1"></a> `flags?` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/message.ts:49](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L49) |
+| <a id="headers"></a> `headers?` | `readonly` | `Buffer` | [src/types/message.ts:55](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L55) |
+| <a id="id-3"></a> `id?` | `readonly` | `string` | [src/types/message.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L42) |
+| <a id="internaldate"></a> `internalDate?` | `readonly` | `Date` | [src/types/message.ts:53](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L53) |
+| <a id="labels"></a> `labels?` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/message.ts:47](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L47) |
+| <a id="modseq"></a> `modseq?` | `readonly` | [`ModSeq`](#modseq-2) | [src/types/message.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L44) |
+| <a id="seq"></a> `seq` | `readonly` | [`SequenceNumber`](#sequencenumber) | [src/types/message.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L40) |
+| <a id="size"></a> `size?` | `readonly` | `number` | [src/types/message.ts:48](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L48) |
+| <a id="source"></a> `source?` | `readonly` | `Buffer` | [src/types/message.ts:43](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L43) |
+| <a id="threadid"></a> `threadId?` | `readonly` | `string` | [src/types/message.ts:46](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L46) |
+| <a id="uid-2"></a> `uid` | `readonly` | [`UID`](#uid-10) | [src/types/message.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L41) |
+
+***
+
+### FetchOptions
+
+```ts
+type FetchOptions = {
+  binary?: boolean;
+  changedSince?: bigint;
+  onUntaggedFetch?: (message: FetchedMessage, done: (err?: Error) => void) => void;
+  uid?: boolean;
+};
+```
+
+Defined in: [src/shell/commands/fetch.ts:8](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L8)
+
+#### Properties
+
+| Property | Modifier | Type | Defined in |
+| ------ | ------ | ------ | ------ |
+| <a id="binary"></a> `binary?` | `readonly` | `boolean` | [src/shell/commands/fetch.ts:10](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L10) |
+| <a id="changedsince"></a> `changedSince?` | `readonly` | `bigint` | [src/shell/commands/fetch.ts:11](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L11) |
+| <a id="onuntaggedfetch"></a> `onUntaggedFetch?` | `readonly` | (`message`: [`FetchedMessage`](#fetchedmessage), `done`: (`err?`: `Error`) => `void`) => `void` | [src/shell/commands/fetch.ts:12](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L12) |
+| <a id="uid-3"></a> `uid?` | `readonly` | `boolean` | [src/shell/commands/fetch.ts:9](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L9) |
 
 ***
 
@@ -6065,25 +6089,67 @@ type FetchQuery = {
 };
 ```
 
-Defined in: [src/types/message.ts:58](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L58)
+Defined in: [src/types/message.ts:58](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L58)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="bodyparts-1"></a> `bodyParts?` | `readonly` | readonly `string`[] | [src/types/message.ts:67](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L67) |
-| <a id="bodystructure-1"></a> `bodyStructure?` | `readonly` | `boolean` | [src/types/message.ts:61](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L61) |
-| <a id="emailid-1"></a> `emailId?` | `readonly` | `boolean` | [src/types/message.ts:70](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L70) |
-| <a id="envelope-1"></a> `envelope?` | `readonly` | `boolean` | [src/types/message.ts:62](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L62) |
-| <a id="flags-2"></a> `flags?` | `readonly` | `boolean` | [src/types/message.ts:60](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L60) |
-| <a id="headers-1"></a> `headers?` | `readonly` | `boolean` \| readonly `string`[] | [src/types/message.ts:66](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L66) |
-| <a id="internaldate-1"></a> `internalDate?` | `readonly` | `boolean` | [src/types/message.ts:63](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L63) |
-| <a id="labels-1"></a> `labels?` | `readonly` | `boolean` | [src/types/message.ts:68](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L68) |
-| <a id="modseq-1"></a> `modseq?` | `readonly` | `boolean` | [src/types/message.ts:71](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L71) |
-| <a id="size-1"></a> `size?` | `readonly` | `boolean` | [src/types/message.ts:64](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L64) |
-| <a id="source-1"></a> `source?` | `readonly` | \| `boolean` \| \{ `maxLength?`: `number`; `start?`: `number`; \} | [src/types/message.ts:65](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L65) |
-| <a id="threadid-1"></a> `threadId?` | `readonly` | `boolean` | [src/types/message.ts:69](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L69) |
-| <a id="uid-3"></a> `uid?` | `readonly` | `boolean` | [src/types/message.ts:59](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L59) |
+| <a id="bodyparts-1"></a> `bodyParts?` | `readonly` | readonly `string`[] | [src/types/message.ts:67](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L67) |
+| <a id="bodystructure-1"></a> `bodyStructure?` | `readonly` | `boolean` | [src/types/message.ts:61](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L61) |
+| <a id="emailid-1"></a> `emailId?` | `readonly` | `boolean` | [src/types/message.ts:70](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L70) |
+| <a id="envelope-1"></a> `envelope?` | `readonly` | `boolean` | [src/types/message.ts:62](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L62) |
+| <a id="flags-2"></a> `flags?` | `readonly` | `boolean` | [src/types/message.ts:60](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L60) |
+| <a id="headers-1"></a> `headers?` | `readonly` | `boolean` \| readonly `string`[] | [src/types/message.ts:66](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L66) |
+| <a id="internaldate-1"></a> `internalDate?` | `readonly` | `boolean` | [src/types/message.ts:63](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L63) |
+| <a id="labels-1"></a> `labels?` | `readonly` | `boolean` | [src/types/message.ts:68](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L68) |
+| <a id="modseq-1"></a> `modseq?` | `readonly` | `boolean` | [src/types/message.ts:71](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L71) |
+| <a id="size-1"></a> `size?` | `readonly` | `boolean` | [src/types/message.ts:64](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L64) |
+| <a id="source-1"></a> `source?` | `readonly` | \| `boolean` \| \{ `maxLength?`: `number`; `start?`: `number`; \} | [src/types/message.ts:65](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L65) |
+| <a id="threadid-1"></a> `threadId?` | `readonly` | `boolean` | [src/types/message.ts:69](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L69) |
+| <a id="uid-4"></a> `uid?` | `readonly` | `boolean` | [src/types/message.ts:59](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L59) |
+
+***
+
+### FetchResult
+
+```ts
+type FetchResult = {
+  count: number;
+  list: FetchedMessage[];
+};
+```
+
+Defined in: [src/shell/commands/fetch.ts:15](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L15)
+
+#### Properties
+
+| Property | Modifier | Type | Defined in |
+| ------ | ------ | ------ | ------ |
+| <a id="count"></a> `count` | `readonly` | `number` | [src/shell/commands/fetch.ts:16](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L16) |
+| <a id="list"></a> `list` | `readonly` | [`FetchedMessage`](#fetchedmessage)[] | [src/shell/commands/fetch.ts:17](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L17) |
+
+***
+
+### FetchStreamOptions
+
+```ts
+type FetchStreamOptions = {
+  binary?: boolean;
+  changedSince?: bigint;
+  uid?: boolean;
+};
+```
+
+Defined in: [src/shell/commands/fetch.ts:229](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L229)
+
+#### Properties
+
+| Property | Modifier | Type | Defined in |
+| ------ | ------ | ------ | ------ |
+| <a id="binary-1"></a> `binary?` | `readonly` | `boolean` | [src/shell/commands/fetch.ts:231](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L231) |
+| <a id="changedsince-1"></a> `changedSince?` | `readonly` | `bigint` | [src/shell/commands/fetch.ts:232](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L232) |
+| <a id="uid-5"></a> `uid?` | `readonly` | `boolean` | [src/shell/commands/fetch.ts:230](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/fetch.ts#L230) |
 
 ***
 
@@ -6093,7 +6159,7 @@ Defined in: [src/types/message.ts:58](https://github.com/marcoappio/imap-sdk/blo
 type FlagColor = "red" | "orange" | "yellow" | "green" | "blue" | "purple" | "grey";
 ```
 
-Defined in: [src/types/common.ts:22](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L22)
+Defined in: [src/types/common.ts:22](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L22)
 
 ***
 
@@ -6111,7 +6177,7 @@ type IdInfo = {
 };
 ```
 
-Defined in: [src/types/connection.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L44)
+Defined in: [src/types/connection.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L44)
 
 #### Indexable
 
@@ -6123,12 +6189,57 @@ Defined in: [src/types/connection.ts:44](https://github.com/marcoappio/imap-sdk/
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="date-1"></a> `date?` | `readonly` | `Date` | [src/types/connection.ts:50](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L50) |
-| <a id="name-8"></a> `name?` | `readonly` | `string` | [src/types/connection.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L45) |
-| <a id="os"></a> `os?` | `readonly` | `string` | [src/types/connection.ts:47](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L47) |
-| <a id="support-url"></a> `support-url?` | `readonly` | `string` | [src/types/connection.ts:49](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L49) |
-| <a id="vendor"></a> `vendor?` | `readonly` | `string` | [src/types/connection.ts:48](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L48) |
-| <a id="version"></a> `version?` | `readonly` | `string` | [src/types/connection.ts:46](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/connection.ts#L46) |
+| <a id="date-1"></a> `date?` | `readonly` | `Date` | [src/types/connection.ts:50](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L50) |
+| <a id="name-8"></a> `name?` | `readonly` | `string` | [src/types/connection.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L45) |
+| <a id="os"></a> `os?` | `readonly` | `string` | [src/types/connection.ts:47](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L47) |
+| <a id="support-url"></a> `support-url?` | `readonly` | `string` | [src/types/connection.ts:49](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L49) |
+| <a id="vendor"></a> `vendor?` | `readonly` | `string` | [src/types/connection.ts:48](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L48) |
+| <a id="version"></a> `version?` | `readonly` | `string` | [src/types/connection.ts:46](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/connection.ts#L46) |
+
+***
+
+### IDLEController
+
+```ts
+type IDLEController = {
+  events: AsyncGenerator<IDLEEvent, void, unknown>;
+  stop: () => void;
+};
+```
+
+Defined in: [src/shell/commands/idle.ts:27](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/idle.ts#L27)
+
+#### Properties
+
+| Property | Type | Defined in |
+| ------ | ------ | ------ |
+| <a id="events"></a> `events` | `AsyncGenerator`\<[`IDLEEvent`](#idleevent), `void`, `unknown`\> | [src/shell/commands/idle.ts:29](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/idle.ts#L29) |
+| <a id="stop"></a> `stop` | () => `void` | [src/shell/commands/idle.ts:28](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/idle.ts#L28) |
+
+***
+
+### IDLEEvent
+
+```ts
+type IDLEEvent = 
+  | {
+  count: number;
+  prevCount: number;
+  type: "exists";
+}
+  | {
+  seq: number;
+  type: "expunge";
+}
+  | {
+  flags?: Set<string>;
+  modseq?: bigint;
+  seq: number;
+  type: "fetch";
+};
+```
+
+Defined in: [src/shell/commands/idle.ts:7](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/idle.ts#L7)
 
 ***
 
@@ -6161,20 +6272,20 @@ type IMAPClientEvents = {
 };
 ```
 
-Defined in: [src/shell/client/index.ts:33](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L33)
+Defined in: [src/shell/client/index.ts:33](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L33)
 
 #### Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="close-2"></a> `close` | \[\] | [src/shell/client/index.ts:34](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L34) |
-| <a id="error-1"></a> `error` | \[`Error`\] | [src/shell/client/index.ts:35](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L35) |
-| <a id="exists"></a> `exists` | \[\{ `count`: `number`; `path`: [`MailboxPath`](#mailboxpath); `prevCount`: `number`; \}\] | [src/shell/client/index.ts:36](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L36) |
-| <a id="expunge"></a> `expunge` | \[\{ `path`: [`MailboxPath`](#mailboxpath); `seq`: `number`; `vanished`: `boolean`; \}\] | [src/shell/client/index.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L37) |
-| <a id="flags-3"></a> `flags` | \[\{ `flags`: `Set`\<`string`\>; `modseq?`: [`ModSeq`](#modseq-2); `path`: [`MailboxPath`](#mailboxpath); `seq`: `number`; `uid?`: `number`; \}\] | [src/shell/client/index.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L38) |
-| <a id="log-2"></a> `log` | \[`object`\] | [src/shell/client/index.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L39) |
-| <a id="mailboxclose"></a> `mailboxClose` | \[[`MailboxInfo`](#mailboxinfo)\] | [src/shell/client/index.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L40) |
-| <a id="mailboxopen"></a> `mailboxOpen` | \[[`MailboxInfo`](#mailboxinfo)\] | [src/shell/client/index.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L41) |
+| <a id="close-2"></a> `close` | \[\] | [src/shell/client/index.ts:34](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L34) |
+| <a id="error-1"></a> `error` | \[`Error`\] | [src/shell/client/index.ts:35](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L35) |
+| <a id="exists"></a> `exists` | \[\{ `count`: `number`; `path`: [`MailboxPath`](#mailboxpath); `prevCount`: `number`; \}\] | [src/shell/client/index.ts:36](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L36) |
+| <a id="expunge"></a> `expunge` | \[\{ `path`: [`MailboxPath`](#mailboxpath); `seq`: `number`; `vanished`: `boolean`; \}\] | [src/shell/client/index.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L37) |
+| <a id="flags-3"></a> `flags` | \[\{ `flags`: `Set`\<`string`\>; `modseq?`: [`ModSeq`](#modseq-2); `path`: [`MailboxPath`](#mailboxpath); `seq`: `number`; `uid?`: `number`; \}\] | [src/shell/client/index.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L38) |
+| <a id="log-2"></a> `log` | \[`object`\] | [src/shell/client/index.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L39) |
+| <a id="mailboxclose"></a> `mailboxClose` | \[[`MailboxInfo`](#mailboxinfo)\] | [src/shell/client/index.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L40) |
+| <a id="mailboxopen"></a> `mailboxOpen` | \[[`MailboxInfo`](#mailboxinfo)\] | [src/shell/client/index.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L41) |
 
 ***
 
@@ -6186,13 +6297,13 @@ type IMAPClientOptions = ConnectionOptions & {
 };
 ```
 
-Defined in: [src/shell/client/index.ts:29](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L29)
+Defined in: [src/shell/client/index.ts:29](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L29)
 
 #### Type Declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id?` | `string` | [src/shell/client/index.ts:30](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L30) |
+| `id?` | `string` | [src/shell/client/index.ts:30](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L30) |
 
 ***
 
@@ -6202,7 +6313,7 @@ Defined in: [src/shell/client/index.ts:29](https://github.com/marcoappio/imap-sd
 type IMAPError = IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:222](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L222)
+Defined in: [src/types/errors.ts:222](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L222)
 
 ***
 
@@ -6212,7 +6323,7 @@ Defined in: [src/types/errors.ts:222](https://github.com/marcoappio/imap-sdk/blo
 type IMAPSDKErrorCode = typeof IMAPSDKErrorCode[keyof typeof IMAPSDKErrorCode];
 ```
 
-Defined in: [src/types/errors.ts:1](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L1)
+Defined in: [src/types/errors.ts:1](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L1)
 
 ***
 
@@ -6232,21 +6343,21 @@ type IMAPSDKErrorOptions = {
 };
 ```
 
-Defined in: [src/types/errors.ts:23](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L23)
+Defined in: [src/types/errors.ts:23](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L23)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="cause-7"></a> `cause?` | `readonly` | `unknown` | [src/types/errors.ts:24](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L24) |
-| <a id="extension-7"></a> `extension?` | `readonly` | `string` | [src/types/errors.ts:30](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L30) |
-| <a id="oautherror-7"></a> `oauthError?` | `readonly` | `unknown` | [src/types/errors.ts:26](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L26) |
-| <a id="parserinput-7"></a> `parserInput?` | `readonly` | `string` | [src/types/errors.ts:32](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L32) |
-| <a id="parserposition-7"></a> `parserPosition?` | `readonly` | `number` | [src/types/errors.ts:31](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L31) |
-| <a id="responsestatus-7"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | [src/types/errors.ts:27](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L27) |
-| <a id="responsetext-7"></a> `responseText?` | `readonly` | `string` | [src/types/errors.ts:28](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L28) |
-| <a id="serverresponsecode-7"></a> `serverResponseCode?` | `readonly` | `string` | [src/types/errors.ts:25](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L25) |
-| <a id="throttlereset-7"></a> `throttleReset?` | `readonly` | `number` | [src/types/errors.ts:29](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L29) |
+| <a id="cause-7"></a> `cause?` | `readonly` | `unknown` | [src/types/errors.ts:24](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L24) |
+| <a id="extension-7"></a> `extension?` | `readonly` | `string` | [src/types/errors.ts:30](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L30) |
+| <a id="oautherror-7"></a> `oauthError?` | `readonly` | `unknown` | [src/types/errors.ts:26](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L26) |
+| <a id="parserinput-7"></a> `parserInput?` | `readonly` | `string` | [src/types/errors.ts:32](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L32) |
+| <a id="parserposition-7"></a> `parserPosition?` | `readonly` | `number` | [src/types/errors.ts:31](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L31) |
+| <a id="responsestatus-7"></a> `responseStatus?` | `readonly` | `"NO"` \| `"BAD"` | [src/types/errors.ts:27](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L27) |
+| <a id="responsetext-7"></a> `responseText?` | `readonly` | `string` | [src/types/errors.ts:28](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L28) |
+| <a id="serverresponsecode-7"></a> `serverResponseCode?` | `readonly` | `string` | [src/types/errors.ts:25](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L25) |
+| <a id="throttlereset-7"></a> `throttleReset?` | `readonly` | `number` | [src/types/errors.ts:29](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L29) |
 
 ***
 
@@ -6260,15 +6371,15 @@ type ListOptions = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:87](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L87)
+Defined in: [src/shell/commands/types.ts:87](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L87)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="listonly"></a> `listOnly?` | `readonly` | `boolean` | [src/shell/commands/types.ts:90](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L90) |
-| <a id="specialusehints"></a> `specialUseHints?` | `readonly` | [`SpecialUseHints`](#specialusehints-1) | [src/shell/commands/types.ts:89](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L89) |
-| <a id="statusquery"></a> `statusQuery?` | `readonly` | [`StatusQueryOptions`](#statusqueryoptions) | [src/shell/commands/types.ts:88](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L88) |
+| <a id="listonly"></a> `listOnly?` | `readonly` | `boolean` | [src/shell/commands/types.ts:90](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L90) |
+| <a id="specialusehints"></a> `specialUseHints?` | `readonly` | [`SpecialUseHints`](#specialusehints-1) | [src/shell/commands/types.ts:89](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L89) |
+| <a id="statusquery"></a> `statusQuery?` | `readonly` | [`StatusQueryOptions`](#statusqueryoptions) | [src/shell/commands/types.ts:88](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L88) |
 
 ***
 
@@ -6282,15 +6393,15 @@ type Lock = {
 };
 ```
 
-Defined in: [src/shell/client/mailbox-lock.ts:3](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/mailbox-lock.ts#L3)
+Defined in: [src/shell/client/mailbox-lock.ts:3](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/mailbox-lock.ts#L3)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="lockid"></a> `lockId` | `readonly` | `string` | [src/shell/client/mailbox-lock.ts:4](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/mailbox-lock.ts#L4) |
-| <a id="path-1"></a> `path` | `readonly` | [`MailboxPath`](#mailboxpath) | [src/shell/client/mailbox-lock.ts:5](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/mailbox-lock.ts#L5) |
-| <a id="release"></a> `release` | `readonly` | () => `void` | [src/shell/client/mailbox-lock.ts:6](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/mailbox-lock.ts#L6) |
+| <a id="lockid"></a> `lockId` | `readonly` | `string` | [src/shell/client/mailbox-lock.ts:4](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/mailbox-lock.ts#L4) |
+| <a id="path-1"></a> `path` | `readonly` | [`MailboxPath`](#mailboxpath) | [src/shell/client/mailbox-lock.ts:5](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/mailbox-lock.ts#L5) |
+| <a id="release"></a> `release` | `readonly` | () => `void` | [src/shell/client/mailbox-lock.ts:6](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/mailbox-lock.ts#L6) |
 
 ***
 
@@ -6307,18 +6418,18 @@ type Logger = {
 };
 ```
 
-Defined in: [src/types/common.ts:24](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L24)
+Defined in: [src/types/common.ts:24](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L24)
 
 #### Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="child"></a> `child` | (`bindings`: `object`) => [`Logger`](#logger-1) | [src/types/common.ts:30](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L30) |
-| <a id="debug"></a> `debug` | (`obj`: `object`, `msg?`: `string`) => `void` | [src/types/common.ts:26](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L26) |
-| <a id="error-2"></a> `error` | (`obj`: `object`, `msg?`: `string`) => `void` | [src/types/common.ts:29](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L29) |
-| <a id="info"></a> `info` | (`obj`: `object`, `msg?`: `string`) => `void` | [src/types/common.ts:27](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L27) |
-| <a id="trace"></a> `trace` | (`obj`: `object`, `msg?`: `string`) => `void` | [src/types/common.ts:25](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L25) |
-| <a id="warn"></a> `warn` | (`obj`: `object`, `msg?`: `string`) => `void` | [src/types/common.ts:28](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L28) |
+| <a id="child"></a> `child` | (`bindings`: `object`) => [`Logger`](#logger-1) | [src/types/common.ts:30](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L30) |
+| <a id="debug"></a> `debug` | (`obj`: `object`, `msg?`: `string`) => `void` | [src/types/common.ts:26](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L26) |
+| <a id="error-2"></a> `error` | (`obj`: `object`, `msg?`: `string`) => `void` | [src/types/common.ts:29](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L29) |
+| <a id="info"></a> `info` | (`obj`: `object`, `msg?`: `string`) => `void` | [src/types/common.ts:27](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L27) |
+| <a id="trace"></a> `trace` | (`obj`: `object`, `msg?`: `string`) => `void` | [src/types/common.ts:25](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L25) |
+| <a id="warn"></a> `warn` | (`obj`: `object`, `msg?`: `string`) => `void` | [src/types/common.ts:28](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L28) |
 
 ***
 
@@ -6343,26 +6454,26 @@ type MailboxInfo = {
 };
 ```
 
-Defined in: [src/types/mailbox.ts:3](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L3)
+Defined in: [src/types/mailbox.ts:3](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L3)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="delimiter"></a> `delimiter` | `readonly` | `string` | [src/types/mailbox.ts:5](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L5) |
-| <a id="exists-1"></a> `exists` | `readonly` | `number` | [src/types/mailbox.ts:16](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L16) |
-| <a id="flags-4"></a> `flags` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/mailbox.ts:6](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L6) |
-| <a id="highestmodseq"></a> `highestModseq?` | `readonly` | [`ModSeq`](#modseq-2) | [src/types/mailbox.ts:12](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L12) |
-| <a id="listed"></a> `listed?` | `readonly` | `boolean` | [src/types/mailbox.ts:9](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L9) |
-| <a id="mailboxid"></a> `mailboxId?` | `readonly` | `string` | [src/types/mailbox.ts:11](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L11) |
-| <a id="nomodseq"></a> `noModseq?` | `readonly` | `boolean` | [src/types/mailbox.ts:13](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L13) |
-| <a id="path-2"></a> `path` | `readonly` | [`MailboxPath`](#mailboxpath) | [src/types/mailbox.ts:4](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L4) |
-| <a id="permanentflags"></a> `permanentFlags?` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/mailbox.ts:7](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L7) |
-| <a id="readonly"></a> `readOnly?` | `readonly` | `boolean` | [src/types/mailbox.ts:17](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L17) |
-| <a id="specialuse"></a> `specialUse?` | `readonly` | `string` | [src/types/mailbox.ts:8](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L8) |
-| <a id="subscribed"></a> `subscribed?` | `readonly` | `boolean` | [src/types/mailbox.ts:10](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L10) |
-| <a id="uidnext"></a> `uidNext` | `readonly` | `number` | [src/types/mailbox.ts:15](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L15) |
-| <a id="uidvalidity-1"></a> `uidValidity` | `readonly` | [`UIDValidity`](#uidvalidity-5) | [src/types/mailbox.ts:14](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L14) |
+| <a id="delimiter"></a> `delimiter` | `readonly` | `string` | [src/types/mailbox.ts:5](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L5) |
+| <a id="exists-1"></a> `exists` | `readonly` | `number` | [src/types/mailbox.ts:16](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L16) |
+| <a id="flags-4"></a> `flags` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/mailbox.ts:6](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L6) |
+| <a id="highestmodseq"></a> `highestModseq?` | `readonly` | [`ModSeq`](#modseq-2) | [src/types/mailbox.ts:12](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L12) |
+| <a id="listed"></a> `listed?` | `readonly` | `boolean` | [src/types/mailbox.ts:9](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L9) |
+| <a id="mailboxid"></a> `mailboxId?` | `readonly` | `string` | [src/types/mailbox.ts:11](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L11) |
+| <a id="nomodseq"></a> `noModseq?` | `readonly` | `boolean` | [src/types/mailbox.ts:13](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L13) |
+| <a id="path-2"></a> `path` | `readonly` | [`MailboxPath`](#mailboxpath) | [src/types/mailbox.ts:4](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L4) |
+| <a id="permanentflags"></a> `permanentFlags?` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/mailbox.ts:7](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L7) |
+| <a id="readonly"></a> `readOnly?` | `readonly` | `boolean` | [src/types/mailbox.ts:17](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L17) |
+| <a id="specialuse"></a> `specialUse?` | `readonly` | `string` | [src/types/mailbox.ts:8](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L8) |
+| <a id="subscribed"></a> `subscribed?` | `readonly` | `boolean` | [src/types/mailbox.ts:10](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L10) |
+| <a id="uidnext"></a> `uidNext` | `readonly` | `number` | [src/types/mailbox.ts:15](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L15) |
+| <a id="uidvalidity-1"></a> `uidValidity` | `readonly` | [`UIDValidity`](#uidvalidity-5) | [src/types/mailbox.ts:14](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L14) |
 
 ***
 
@@ -6384,23 +6495,23 @@ type MailboxListEntry = {
 };
 ```
 
-Defined in: [src/types/mailbox.ts:20](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L20)
+Defined in: [src/types/mailbox.ts:20](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L20)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="delimiter-1"></a> `delimiter` | `readonly` | `string` | [src/types/mailbox.ts:24](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L24) |
-| <a id="flags-5"></a> `flags` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/mailbox.ts:27](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L27) |
-| <a id="listed-1"></a> `listed` | `readonly` | `boolean` | [src/types/mailbox.ts:29](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L29) |
-| <a id="name-9"></a> `name` | `readonly` | `string` | [src/types/mailbox.ts:23](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L23) |
-| <a id="parent"></a> `parent` | `readonly` | readonly `string`[] | [src/types/mailbox.ts:25](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L25) |
-| <a id="parentpath"></a> `parentPath` | `readonly` | `string` | [src/types/mailbox.ts:26](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L26) |
-| <a id="path-3"></a> `path` | `readonly` | [`MailboxPath`](#mailboxpath) | [src/types/mailbox.ts:21](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L21) |
-| <a id="pathaslisted"></a> `pathAsListed` | `readonly` | `string` | [src/types/mailbox.ts:22](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L22) |
-| <a id="specialuse-1"></a> `specialUse?` | `readonly` | `string` | [src/types/mailbox.ts:28](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L28) |
-| <a id="status"></a> `status?` | `readonly` | [`StatusInfo`](#statusinfo) | [src/types/mailbox.ts:31](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L31) |
-| <a id="subscribed-1"></a> `subscribed` | `readonly` | `boolean` | [src/types/mailbox.ts:30](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L30) |
+| <a id="delimiter-1"></a> `delimiter` | `readonly` | `string` | [src/types/mailbox.ts:24](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L24) |
+| <a id="flags-5"></a> `flags` | `readonly` | `ReadonlySet`\<`string`\> | [src/types/mailbox.ts:27](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L27) |
+| <a id="listed-1"></a> `listed` | `readonly` | `boolean` | [src/types/mailbox.ts:29](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L29) |
+| <a id="name-9"></a> `name` | `readonly` | `string` | [src/types/mailbox.ts:23](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L23) |
+| <a id="parent"></a> `parent` | `readonly` | readonly `string`[] | [src/types/mailbox.ts:25](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L25) |
+| <a id="parentpath"></a> `parentPath` | `readonly` | `string` | [src/types/mailbox.ts:26](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L26) |
+| <a id="path-3"></a> `path` | `readonly` | [`MailboxPath`](#mailboxpath) | [src/types/mailbox.ts:21](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L21) |
+| <a id="pathaslisted"></a> `pathAsListed` | `readonly` | `string` | [src/types/mailbox.ts:22](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L22) |
+| <a id="specialuse-1"></a> `specialUse?` | `readonly` | `string` | [src/types/mailbox.ts:28](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L28) |
+| <a id="status"></a> `status?` | `readonly` | [`StatusInfo`](#statusinfo) | [src/types/mailbox.ts:31](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L31) |
+| <a id="subscribed-1"></a> `subscribed` | `readonly` | `boolean` | [src/types/mailbox.ts:30](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L30) |
 
 ***
 
@@ -6410,7 +6521,7 @@ Defined in: [src/types/mailbox.ts:20](https://github.com/marcoappio/imap-sdk/blo
 type MailboxPath = Brand<string, "MailboxPath">;
 ```
 
-Defined in: [src/types/common.ts:8](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L8)
+Defined in: [src/types/common.ts:8](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L8)
 
 ***
 
@@ -6431,22 +6542,22 @@ type MessageEnvelope = {
 };
 ```
 
-Defined in: [src/types/message.ts:8](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L8)
+Defined in: [src/types/message.ts:8](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L8)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="bcc"></a> `bcc?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:18](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L18) |
-| <a id="cc"></a> `cc?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:17](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L17) |
-| <a id="date-2"></a> `date?` | `readonly` | `Date` | [src/types/message.ts:9](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L9) |
-| <a id="from"></a> `from?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:13](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L13) |
-| <a id="inreplyto"></a> `inReplyTo?` | `readonly` | `string` | [src/types/message.ts:12](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L12) |
-| <a id="messageid"></a> `messageId?` | `readonly` | `string` | [src/types/message.ts:11](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L11) |
-| <a id="replyto"></a> `replyTo?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:15](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L15) |
-| <a id="sender"></a> `sender?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:14](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L14) |
-| <a id="subject"></a> `subject?` | `readonly` | `string` | [src/types/message.ts:10](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L10) |
-| <a id="to"></a> `to?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:16](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L16) |
+| <a id="bcc"></a> `bcc?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:18](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L18) |
+| <a id="cc"></a> `cc?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:17](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L17) |
+| <a id="date-2"></a> `date?` | `readonly` | `Date` | [src/types/message.ts:9](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L9) |
+| <a id="from"></a> `from?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:13](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L13) |
+| <a id="inreplyto"></a> `inReplyTo?` | `readonly` | `string` | [src/types/message.ts:12](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L12) |
+| <a id="messageid"></a> `messageId?` | `readonly` | `string` | [src/types/message.ts:11](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L11) |
+| <a id="replyto"></a> `replyTo?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:15](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L15) |
+| <a id="sender"></a> `sender?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:14](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L14) |
+| <a id="subject"></a> `subject?` | `readonly` | `string` | [src/types/message.ts:10](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L10) |
+| <a id="to"></a> `to?` | `readonly` | readonly [`Address`](#address)[] | [src/types/message.ts:16](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L16) |
 
 ***
 
@@ -6472,27 +6583,27 @@ type MessageStructure = {
 };
 ```
 
-Defined in: [src/types/message.ts:21](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L21)
+Defined in: [src/types/message.ts:21](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L21)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="childnodes"></a> `childNodes?` | `readonly` | readonly [`MessageStructure`](#messagestructure)[] | [src/types/message.ts:36](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L36) |
-| <a id="description"></a> `description?` | `readonly` | `string` | [src/types/message.ts:26](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L26) |
-| <a id="disposition"></a> `disposition?` | `readonly` | `string` | [src/types/message.ts:30](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L30) |
-| <a id="dispositionparameters"></a> `dispositionParameters?` | `readonly` | `Readonly`\<`Record`\<`string`, `string`\>\> | [src/types/message.ts:31](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L31) |
-| <a id="encoding"></a> `encoding?` | `readonly` | `string` | [src/types/message.ts:27](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L27) |
-| <a id="envelope-2"></a> `envelope?` | `readonly` | [`MessageEnvelope`](#messageenvelope) | [src/types/message.ts:29](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L29) |
-| <a id="id-4"></a> `id?` | `readonly` | `string` | [src/types/message.ts:25](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L25) |
-| <a id="language"></a> `language?` | `readonly` | readonly `string`[] | [src/types/message.ts:33](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L33) |
-| <a id="linecount"></a> `lineCount?` | `readonly` | `number` | [src/types/message.ts:35](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L35) |
-| <a id="location"></a> `location?` | `readonly` | `string` | [src/types/message.ts:34](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L34) |
-| <a id="md5"></a> `md5?` | `readonly` | `string` | [src/types/message.ts:32](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L32) |
-| <a id="parameters"></a> `parameters?` | `readonly` | `Readonly`\<`Record`\<`string`, `string`\>\> | [src/types/message.ts:24](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L24) |
-| <a id="part"></a> `part?` | `readonly` | `string` | [src/types/message.ts:22](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L22) |
-| <a id="size-2"></a> `size?` | `readonly` | `number` | [src/types/message.ts:28](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L28) |
-| <a id="type"></a> `type` | `readonly` | `string` | [src/types/message.ts:23](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L23) |
+| <a id="childnodes"></a> `childNodes?` | `readonly` | readonly [`MessageStructure`](#messagestructure)[] | [src/types/message.ts:36](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L36) |
+| <a id="description"></a> `description?` | `readonly` | `string` | [src/types/message.ts:26](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L26) |
+| <a id="disposition"></a> `disposition?` | `readonly` | `string` | [src/types/message.ts:30](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L30) |
+| <a id="dispositionparameters"></a> `dispositionParameters?` | `readonly` | `Readonly`\<`Record`\<`string`, `string`\>\> | [src/types/message.ts:31](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L31) |
+| <a id="encoding"></a> `encoding?` | `readonly` | `string` | [src/types/message.ts:27](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L27) |
+| <a id="envelope-2"></a> `envelope?` | `readonly` | [`MessageEnvelope`](#messageenvelope) | [src/types/message.ts:29](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L29) |
+| <a id="id-4"></a> `id?` | `readonly` | `string` | [src/types/message.ts:25](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L25) |
+| <a id="language"></a> `language?` | `readonly` | readonly `string`[] | [src/types/message.ts:33](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L33) |
+| <a id="linecount"></a> `lineCount?` | `readonly` | `number` | [src/types/message.ts:35](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L35) |
+| <a id="location"></a> `location?` | `readonly` | `string` | [src/types/message.ts:34](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L34) |
+| <a id="md5"></a> `md5?` | `readonly` | `string` | [src/types/message.ts:32](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L32) |
+| <a id="parameters"></a> `parameters?` | `readonly` | `Readonly`\<`Record`\<`string`, `string`\>\> | [src/types/message.ts:24](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L24) |
+| <a id="part"></a> `part?` | `readonly` | `string` | [src/types/message.ts:22](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L22) |
+| <a id="size-2"></a> `size?` | `readonly` | `number` | [src/types/message.ts:28](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L28) |
+| <a id="type"></a> `type` | `readonly` | `string` | [src/types/message.ts:23](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L23) |
 
 ***
 
@@ -6502,7 +6613,7 @@ Defined in: [src/types/message.ts:21](https://github.com/marcoappio/imap-sdk/blo
 type ModSeq = Brand<bigint, "ModSeq">;
 ```
 
-Defined in: [src/types/common.ts:6](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L6)
+Defined in: [src/types/common.ts:6](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L6)
 
 ***
 
@@ -6514,13 +6625,13 @@ type MoveOptions = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:156](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L156)
+Defined in: [src/shell/commands/types.ts:156](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L156)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="uid-4"></a> `uid?` | `readonly` | `boolean` | [src/shell/commands/types.ts:157](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L157) |
+| <a id="uid-6"></a> `uid?` | `readonly` | `boolean` | [src/shell/commands/types.ts:157](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L157) |
 
 ***
 
@@ -6530,7 +6641,7 @@ Defined in: [src/shell/commands/types.ts:156](https://github.com/marcoappio/imap
 type MoveResult = CopyResult;
 ```
 
-Defined in: [src/shell/commands/types.ts:160](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L160)
+Defined in: [src/shell/commands/types.ts:160](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L160)
 
 ***
 
@@ -6543,14 +6654,14 @@ type NamespaceEntry = {
 };
 ```
 
-Defined in: [src/types/mailbox.ts:63](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L63)
+Defined in: [src/types/mailbox.ts:63](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L63)
 
 #### Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="delimiter-2"></a> `delimiter` | `string` | [src/types/mailbox.ts:65](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L65) |
-| <a id="prefix"></a> `prefix` | `string` | [src/types/mailbox.ts:64](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L64) |
+| <a id="delimiter-2"></a> `delimiter` | `string` | [src/types/mailbox.ts:65](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L65) |
+| <a id="prefix"></a> `prefix` | `string` | [src/types/mailbox.ts:64](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L64) |
 
 ***
 
@@ -6564,15 +6675,15 @@ type NamespaceInfo = {
 };
 ```
 
-Defined in: [src/types/mailbox.ts:57](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L57)
+Defined in: [src/types/mailbox.ts:57](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L57)
 
 #### Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="other"></a> `other` | [`NamespaceEntry`](#namespaceentry)[] \| `false` | [src/types/mailbox.ts:59](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L59) |
-| <a id="personal"></a> `personal` | [`NamespaceEntry`](#namespaceentry)[] | [src/types/mailbox.ts:58](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L58) |
-| <a id="shared"></a> `shared` | [`NamespaceEntry`](#namespaceentry)[] \| `false` | [src/types/mailbox.ts:60](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L60) |
+| <a id="other"></a> `other` | [`NamespaceEntry`](#namespaceentry)[] \| `false` | [src/types/mailbox.ts:59](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L59) |
+| <a id="personal"></a> `personal` | [`NamespaceEntry`](#namespaceentry)[] | [src/types/mailbox.ts:58](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L58) |
+| <a id="shared"></a> `shared` | [`NamespaceEntry`](#namespaceentry)[] \| `false` | [src/types/mailbox.ts:60](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L60) |
 
 ***
 
@@ -6585,7 +6696,7 @@ type OkResult<T> = {
 };
 ```
 
-Defined in: [src/types/result.ts:1](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L1)
+Defined in: [src/types/result.ts:1](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L1)
 
 #### Type Parameters
 
@@ -6597,8 +6708,8 @@ Defined in: [src/types/result.ts:1](https://github.com/marcoappio/imap-sdk/blob/
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="ok-1"></a> `ok` | `readonly` | `true` | [src/types/result.ts:1](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L1) |
-| <a id="value"></a> `value` | `readonly` | `T` | [src/types/result.ts:1](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L1) |
+| <a id="ok-1"></a> `ok` | `readonly` | `true` | [src/types/result.ts:1](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L1) |
+| <a id="value"></a> `value` | `readonly` | `T` | [src/types/result.ts:1](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L1) |
 
 ***
 
@@ -6614,17 +6725,17 @@ type ParsedResponse = {
 };
 ```
 
-Defined in: [src/types/protocol.ts:12](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L12)
+Defined in: [src/types/protocol.ts:12](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L12)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="attributes"></a> `attributes?` | `readonly` | readonly [`Token`](#token)[] | [src/types/protocol.ts:15](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L15) |
-| <a id="command"></a> `command` | `readonly` | `string` | [src/types/protocol.ts:14](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L14) |
-| <a id="humanreadable"></a> `humanReadable?` | `readonly` | `string` | [src/types/protocol.ts:16](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L16) |
-| <a id="nullbytesremoved"></a> `nullBytesRemoved?` | `readonly` | `number` | [src/types/protocol.ts:17](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L17) |
-| <a id="tag-1"></a> `tag` | `readonly` | [`Tag`](#tag-2) \| `"*"` \| `"+"` | [src/types/protocol.ts:13](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L13) |
+| <a id="attributes"></a> `attributes?` | `readonly` | readonly [`Token`](#token)[] | [src/types/protocol.ts:15](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L15) |
+| <a id="command"></a> `command` | `readonly` | `string` | [src/types/protocol.ts:14](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L14) |
+| <a id="humanreadable"></a> `humanReadable?` | `readonly` | `string` | [src/types/protocol.ts:16](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L16) |
+| <a id="nullbytesremoved"></a> `nullBytesRemoved?` | `readonly` | `number` | [src/types/protocol.ts:17](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L17) |
+| <a id="tag-1"></a> `tag` | `readonly` | [`Tag`](#tag-2) \| `"*"` \| `"+"` | [src/types/protocol.ts:13](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L13) |
 
 ***
 
@@ -6634,7 +6745,7 @@ Defined in: [src/types/protocol.ts:12](https://github.com/marcoappio/imap-sdk/bl
 type PlusTagHandler = (response: ParsedResponse) => Promise<void> | void;
 ```
 
-Defined in: [src/shell/commands/types.ts:12](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L12)
+Defined in: [src/shell/commands/types.ts:12](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L12)
 
 #### Parameters
 
@@ -6659,16 +6770,16 @@ type QuotaInfo = {
 };
 ```
 
-Defined in: [src/types/mailbox.ts:50](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L50)
+Defined in: [src/types/mailbox.ts:50](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L50)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="messages"></a> `messages?` | `public` | [`QuotaResource`](#quotaresource) | [src/types/mailbox.ts:54](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L54) |
-| <a id="path-4"></a> `path` | `readonly` | [`MailboxPath`](#mailboxpath) | [src/types/mailbox.ts:51](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L51) |
-| <a id="quotaroot"></a> `quotaRoot?` | `public` | `string` | [src/types/mailbox.ts:52](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L52) |
-| <a id="storage"></a> `storage?` | `public` | [`QuotaResource`](#quotaresource) | [src/types/mailbox.ts:53](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L53) |
+| <a id="messages"></a> `messages?` | `public` | [`QuotaResource`](#quotaresource) | [src/types/mailbox.ts:54](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L54) |
+| <a id="path-4"></a> `path` | `readonly` | [`MailboxPath`](#mailboxpath) | [src/types/mailbox.ts:51](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L51) |
+| <a id="quotaroot"></a> `quotaRoot?` | `public` | `string` | [src/types/mailbox.ts:52](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L52) |
+| <a id="storage"></a> `storage?` | `public` | [`QuotaResource`](#quotaresource) | [src/types/mailbox.ts:53](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L53) |
 
 ***
 
@@ -6682,15 +6793,15 @@ type QuotaResource = {
 };
 ```
 
-Defined in: [src/types/mailbox.ts:44](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L44)
+Defined in: [src/types/mailbox.ts:44](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L44)
 
 #### Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="limit"></a> `limit?` | `number` | [src/types/mailbox.ts:46](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L46) |
-| <a id="status-1"></a> `status?` | `string` | [src/types/mailbox.ts:47](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L47) |
-| <a id="usage"></a> `usage?` | `number` | [src/types/mailbox.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L45) |
+| <a id="limit"></a> `limit?` | `number` | [src/types/mailbox.ts:46](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L46) |
+| <a id="status-1"></a> `status?` | `string` | [src/types/mailbox.ts:47](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L47) |
+| <a id="usage"></a> `usage?` | `number` | [src/types/mailbox.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L45) |
 
 ***
 
@@ -6700,7 +6811,7 @@ Defined in: [src/types/mailbox.ts:44](https://github.com/marcoappio/imap-sdk/blo
 type Result<T, E> = OkResult<T> | ErrResult<E>;
 ```
 
-Defined in: [src/types/result.ts:3](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L3)
+Defined in: [src/types/result.ts:3](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L3)
 
 #### Type Parameters
 
@@ -6719,13 +6830,13 @@ type SearchAllTerm = {
 };
 ```
 
-Defined in: [src/types/search.ts:43](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L43)
+Defined in: [src/types/search.ts:43](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L43)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="all"></a> `all` | `readonly` | `true` | [src/types/search.ts:43](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L43) |
+| <a id="all"></a> `all` | `readonly` | `true` | [src/types/search.ts:43](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L43) |
 
 ***
 
@@ -6753,7 +6864,7 @@ type SearchDateTerm =
 };
 ```
 
-Defined in: [src/types/search.ts:1](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L1)
+Defined in: [src/types/search.ts:1](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L1)
 
 ***
 
@@ -6765,13 +6876,13 @@ type SearchEmailIdTerm = {
 };
 ```
 
-Defined in: [src/types/search.ts:33](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L33)
+Defined in: [src/types/search.ts:33](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L33)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="emailid-2"></a> `emailId` | `readonly` | `string` | [src/types/search.ts:33](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L33) |
+| <a id="emailid-2"></a> `emailId` | `readonly` | `string` | [src/types/search.ts:33](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L33) |
 
 ***
 
@@ -6796,7 +6907,7 @@ type SearchFlagTerm =
 };
 ```
 
-Defined in: [src/types/search.ts:11](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L11)
+Defined in: [src/types/search.ts:11](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L11)
 
 ***
 
@@ -6808,13 +6919,13 @@ type SearchGmailRawTerm = {
 };
 ```
 
-Defined in: [src/types/search.ts:35](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L35)
+Defined in: [src/types/search.ts:35](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L35)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="gmailraw"></a> `gmailRaw` | `readonly` | `string` | [src/types/search.ts:35](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L35) |
+| <a id="gmailraw"></a> `gmailRaw` | `readonly` | `string` | [src/types/search.ts:35](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L35) |
 
 ***
 
@@ -6830,7 +6941,7 @@ type SearchKeywordTerm =
 };
 ```
 
-Defined in: [src/types/search.ts:28](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L28)
+Defined in: [src/types/search.ts:28](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L28)
 
 ***
 
@@ -6842,13 +6953,13 @@ type SearchModseqTerm = {
 };
 ```
 
-Defined in: [src/types/search.ts:32](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L32)
+Defined in: [src/types/search.ts:32](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L32)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="modseq-3"></a> `modseq` | `readonly` | `bigint` | [src/types/search.ts:32](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L32) |
+| <a id="modseq-3"></a> `modseq` | `readonly` | `bigint` | [src/types/search.ts:32](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L32) |
 
 ***
 
@@ -6860,13 +6971,13 @@ type SearchNotTerm = {
 };
 ```
 
-Defined in: [src/types/search.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L42)
+Defined in: [src/types/search.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L42)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="not"></a> `not` | `readonly` | [`SearchQuery`](#searchquery) | [src/types/search.ts:42](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L42) |
+| <a id="not"></a> `not` | `readonly` | [`SearchQuery`](#searchquery) | [src/types/search.ts:42](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L42) |
 
 ***
 
@@ -6878,13 +6989,13 @@ type SearchOptions = {
 };
 ```
 
-Defined in: [src/types/message.ts:85](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L85)
+Defined in: [src/types/message.ts:85](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L85)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="uid-5"></a> `uid?` | `readonly` | `boolean` | [src/types/message.ts:86](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/message.ts#L86) |
+| <a id="uid-7"></a> `uid?` | `readonly` | `boolean` | [src/types/message.ts:86](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/message.ts#L86) |
 
 ***
 
@@ -6896,13 +7007,13 @@ type SearchOrTerm = {
 };
 ```
 
-Defined in: [src/types/search.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L39)
+Defined in: [src/types/search.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L39)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="or"></a> `or` | `readonly` | readonly \[[`SearchQuery`](#searchquery), [`SearchQuery`](#searchquery)\] | [src/types/search.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L40) |
+| <a id="or"></a> `or` | `readonly` | readonly \[[`SearchQuery`](#searchquery), [`SearchQuery`](#searchquery)\] | [src/types/search.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L40) |
 
 ***
 
@@ -6912,7 +7023,7 @@ Defined in: [src/types/search.ts:39](https://github.com/marcoappio/imap-sdk/blob
 type SearchQuery = SearchTerm | readonly SearchTerm[];
 ```
 
-Defined in: [src/types/search.ts:62](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L62)
+Defined in: [src/types/search.ts:62](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L62)
 
 ***
 
@@ -6924,13 +7035,13 @@ type SearchSeqTerm = {
 };
 ```
 
-Defined in: [src/types/search.ts:31](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L31)
+Defined in: [src/types/search.ts:31](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L31)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="seq-1"></a> `seq` | `readonly` | `string` | [src/types/search.ts:31](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L31) |
+| <a id="seq-1"></a> `seq` | `readonly` | `string` | [src/types/search.ts:31](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L31) |
 
 ***
 
@@ -6946,7 +7057,7 @@ type SearchSizeTerm =
 };
 ```
 
-Defined in: [src/types/search.ts:9](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L9)
+Defined in: [src/types/search.ts:9](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L9)
 
 ***
 
@@ -6971,7 +7082,7 @@ type SearchTerm =
   | SearchAllTerm;
 ```
 
-Defined in: [src/types/search.ts:45](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L45)
+Defined in: [src/types/search.ts:45](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L45)
 
 ***
 
@@ -7008,7 +7119,7 @@ type SearchTextTerm =
 };
 ```
 
-Defined in: [src/types/search.ts:18](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L18)
+Defined in: [src/types/search.ts:18](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L18)
 
 ***
 
@@ -7020,13 +7131,13 @@ type SearchThreadIdTerm = {
 };
 ```
 
-Defined in: [src/types/search.ts:34](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L34)
+Defined in: [src/types/search.ts:34](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L34)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="threadid-2"></a> `threadId` | `readonly` | `string` | [src/types/search.ts:34](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L34) |
+| <a id="threadid-2"></a> `threadId` | `readonly` | `string` | [src/types/search.ts:34](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L34) |
 
 ***
 
@@ -7038,13 +7149,13 @@ type SearchUidTerm = {
 };
 ```
 
-Defined in: [src/types/search.ts:30](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L30)
+Defined in: [src/types/search.ts:30](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L30)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="uid-6"></a> `uid` | `readonly` | `string` | [src/types/search.ts:30](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L30) |
+| <a id="uid-8"></a> `uid` | `readonly` | `string` | [src/types/search.ts:30](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L30) |
 
 ***
 
@@ -7060,7 +7171,7 @@ type SearchWithinTerm =
 };
 ```
 
-Defined in: [src/types/search.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/search.ts#L37)
+Defined in: [src/types/search.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/search.ts#L37)
 
 ***
 
@@ -7074,15 +7185,15 @@ type SelectOptions = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:71](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L71)
+Defined in: [src/shell/commands/types.ts:71](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L71)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="changedsince"></a> `changedSince?` | `readonly` | [`ModSeq`](#modseq-2) | [src/shell/commands/types.ts:73](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L73) |
-| <a id="readonly-1"></a> `readOnly?` | `readonly` | `boolean` | [src/shell/commands/types.ts:72](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L72) |
-| <a id="uidvalidity-2"></a> `uidValidity?` | `readonly` | [`UIDValidity`](#uidvalidity-5) | [src/shell/commands/types.ts:74](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L74) |
+| <a id="changedsince-2"></a> `changedSince?` | `readonly` | [`ModSeq`](#modseq-2) | [src/shell/commands/types.ts:73](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L73) |
+| <a id="readonly-1"></a> `readOnly?` | `readonly` | `boolean` | [src/shell/commands/types.ts:72](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L72) |
+| <a id="uidvalidity-2"></a> `uidValidity?` | `readonly` | [`UIDValidity`](#uidvalidity-5) | [src/shell/commands/types.ts:74](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L74) |
 
 ***
 
@@ -7092,7 +7203,7 @@ Defined in: [src/shell/commands/types.ts:71](https://github.com/marcoappio/imap-
 type SequenceNumber = Brand<number, "SequenceNumber">;
 ```
 
-Defined in: [src/types/common.ts:5](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L5)
+Defined in: [src/types/common.ts:5](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L5)
 
 ***
 
@@ -7107,7 +7218,7 @@ type SequenceRange =
   | "*";
 ```
 
-Defined in: [src/types/common.ts:20](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L20)
+Defined in: [src/types/common.ts:20](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L20)
 
 ***
 
@@ -7123,17 +7234,17 @@ type SpecialUseHints = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:79](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L79)
+Defined in: [src/shell/commands/types.ts:79](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L79)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="archive"></a> `archive?` | `readonly` | `string` | [src/shell/commands/types.ts:84](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L84) |
-| <a id="drafts"></a> `drafts?` | `readonly` | `string` | [src/shell/commands/types.ts:83](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L83) |
-| <a id="junk"></a> `junk?` | `readonly` | `string` | [src/shell/commands/types.ts:81](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L81) |
-| <a id="sent"></a> `sent?` | `readonly` | `string` | [src/shell/commands/types.ts:80](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L80) |
-| <a id="trash"></a> `trash?` | `readonly` | `string` | [src/shell/commands/types.ts:82](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L82) |
+| <a id="archive"></a> `archive?` | `readonly` | `string` | [src/shell/commands/types.ts:84](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L84) |
+| <a id="drafts"></a> `drafts?` | `readonly` | `string` | [src/shell/commands/types.ts:83](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L83) |
+| <a id="junk"></a> `junk?` | `readonly` | `string` | [src/shell/commands/types.ts:81](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L81) |
+| <a id="sent"></a> `sent?` | `readonly` | `string` | [src/shell/commands/types.ts:80](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L80) |
+| <a id="trash"></a> `trash?` | `readonly` | `string` | [src/shell/commands/types.ts:82](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L82) |
 
 ***
 
@@ -7151,19 +7262,19 @@ type StatusInfo = {
 };
 ```
 
-Defined in: [src/types/mailbox.ts:34](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L34)
+Defined in: [src/types/mailbox.ts:34](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L34)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="highestmodseq-1"></a> `highestModseq?` | `readonly` | [`ModSeq`](#modseq-2) | [src/types/mailbox.ts:41](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L41) |
-| <a id="messages-1"></a> `messages?` | `readonly` | `number` | [src/types/mailbox.ts:36](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L36) |
-| <a id="path-5"></a> `path` | `readonly` | [`MailboxPath`](#mailboxpath) | [src/types/mailbox.ts:35](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L35) |
-| <a id="recent"></a> `recent?` | `readonly` | `number` | [src/types/mailbox.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L37) |
-| <a id="uidnext-1"></a> `uidNext?` | `readonly` | `number` | [src/types/mailbox.ts:38](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L38) |
-| <a id="uidvalidity-3"></a> `uidValidity?` | `readonly` | [`UIDValidity`](#uidvalidity-5) | [src/types/mailbox.ts:39](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L39) |
-| <a id="unseen"></a> `unseen?` | `readonly` | `number` | [src/types/mailbox.ts:40](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/mailbox.ts#L40) |
+| <a id="highestmodseq-1"></a> `highestModseq?` | `readonly` | [`ModSeq`](#modseq-2) | [src/types/mailbox.ts:41](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L41) |
+| <a id="messages-1"></a> `messages?` | `readonly` | `number` | [src/types/mailbox.ts:36](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L36) |
+| <a id="path-5"></a> `path` | `readonly` | [`MailboxPath`](#mailboxpath) | [src/types/mailbox.ts:35](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L35) |
+| <a id="recent"></a> `recent?` | `readonly` | `number` | [src/types/mailbox.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L37) |
+| <a id="uidnext-1"></a> `uidNext?` | `readonly` | `number` | [src/types/mailbox.ts:38](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L38) |
+| <a id="uidvalidity-3"></a> `uidValidity?` | `readonly` | [`UIDValidity`](#uidvalidity-5) | [src/types/mailbox.ts:39](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L39) |
+| <a id="unseen"></a> `unseen?` | `readonly` | `number` | [src/types/mailbox.ts:40](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/mailbox.ts#L40) |
 
 ***
 
@@ -7180,18 +7291,18 @@ type StatusQueryOptions = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:93](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L93)
+Defined in: [src/shell/commands/types.ts:93](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L93)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="highestmodseq-2"></a> `highestModseq?` | `readonly` | `boolean` | [src/shell/commands/types.ts:99](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L99) |
-| <a id="messages-2"></a> `messages?` | `readonly` | `boolean` | [src/shell/commands/types.ts:94](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L94) |
-| <a id="recent-1"></a> `recent?` | `readonly` | `boolean` | [src/shell/commands/types.ts:95](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L95) |
-| <a id="uidnext-2"></a> `uidNext?` | `readonly` | `boolean` | [src/shell/commands/types.ts:96](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L96) |
-| <a id="uidvalidity-4"></a> `uidValidity?` | `readonly` | `boolean` | [src/shell/commands/types.ts:97](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L97) |
-| <a id="unseen-1"></a> `unseen?` | `readonly` | `boolean` | [src/shell/commands/types.ts:98](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L98) |
+| <a id="highestmodseq-2"></a> `highestModseq?` | `readonly` | `boolean` | [src/shell/commands/types.ts:99](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L99) |
+| <a id="messages-2"></a> `messages?` | `readonly` | `boolean` | [src/shell/commands/types.ts:94](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L94) |
+| <a id="recent-1"></a> `recent?` | `readonly` | `boolean` | [src/shell/commands/types.ts:95](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L95) |
+| <a id="uidnext-2"></a> `uidNext?` | `readonly` | `boolean` | [src/shell/commands/types.ts:96](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L96) |
+| <a id="uidvalidity-4"></a> `uidValidity?` | `readonly` | `boolean` | [src/shell/commands/types.ts:97](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L97) |
+| <a id="unseen-1"></a> `unseen?` | `readonly` | `boolean` | [src/shell/commands/types.ts:98](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L98) |
 
 ***
 
@@ -7207,17 +7318,17 @@ type StoreOptions = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:168](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L168)
+Defined in: [src/shell/commands/types.ts:168](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L168)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="operation"></a> `operation?` | `readonly` | `"add"` \| `"remove"` \| `"set"` | [src/shell/commands/types.ts:172](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L172) |
-| <a id="silent"></a> `silent?` | `readonly` | `boolean` | [src/shell/commands/types.ts:170](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L170) |
-| <a id="uid-7"></a> `uid?` | `readonly` | `boolean` | [src/shell/commands/types.ts:169](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L169) |
-| <a id="unchangedsince"></a> `unchangedSince?` | `readonly` | [`ModSeq`](#modseq-2) | [src/shell/commands/types.ts:173](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L173) |
-| <a id="uselabels"></a> `useLabels?` | `readonly` | `boolean` | [src/shell/commands/types.ts:171](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L171) |
+| <a id="operation"></a> `operation?` | `readonly` | `"add"` \| `"remove"` \| `"set"` | [src/shell/commands/types.ts:172](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L172) |
+| <a id="silent"></a> `silent?` | `readonly` | `boolean` | [src/shell/commands/types.ts:170](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L170) |
+| <a id="uid-9"></a> `uid?` | `readonly` | `boolean` | [src/shell/commands/types.ts:169](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L169) |
+| <a id="unchangedsince"></a> `unchangedSince?` | `readonly` | [`ModSeq`](#modseq-2) | [src/shell/commands/types.ts:173](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L173) |
+| <a id="uselabels"></a> `useLabels?` | `readonly` | `boolean` | [src/shell/commands/types.ts:171](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L171) |
 
 ***
 
@@ -7227,7 +7338,7 @@ Defined in: [src/shell/commands/types.ts:168](https://github.com/marcoappio/imap
 type Tag = Brand<string, "Tag">;
 ```
 
-Defined in: [src/types/common.ts:9](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L9)
+Defined in: [src/types/common.ts:9](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L9)
 
 ***
 
@@ -7242,16 +7353,16 @@ type Token = {
 };
 ```
 
-Defined in: [src/types/protocol.ts:5](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L5)
+Defined in: [src/types/protocol.ts:5](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L5)
 
 #### Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="partial"></a> `partial?` | `readonly` | readonly \[`number`\] \| readonly \[`number`, `number`\] | [src/types/protocol.ts:9](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L9) |
-| <a id="section"></a> `section?` | `readonly` | readonly [`Token`](#token)[] | [src/types/protocol.ts:8](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L8) |
-| <a id="type-1"></a> `type` | `readonly` | [`TokenType`](#tokentype-1) | [src/types/protocol.ts:6](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L6) |
-| <a id="value-1"></a> `value` | `readonly` | `string` \| `Buffer` \| `null` | [src/types/protocol.ts:7](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L7) |
+| <a id="partial"></a> `partial?` | `readonly` | readonly \[`number`\] \| readonly \[`number`, `number`\] | [src/types/protocol.ts:9](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L9) |
+| <a id="section"></a> `section?` | `readonly` | readonly [`Token`](#token)[] | [src/types/protocol.ts:8](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L8) |
+| <a id="type-1"></a> `type` | `readonly` | [`TokenType`](#tokentype-1) | [src/types/protocol.ts:6](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L6) |
+| <a id="value-1"></a> `value` | `readonly` | `string` \| `Buffer` \| `null` | [src/types/protocol.ts:7](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L7) |
 
 ***
 
@@ -7270,7 +7381,7 @@ type TokenType =
   | "NIL";
 ```
 
-Defined in: [src/types/protocol.ts:3](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/protocol.ts#L3)
+Defined in: [src/types/protocol.ts:3](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/protocol.ts#L3)
 
 ***
 
@@ -7280,7 +7391,7 @@ Defined in: [src/types/protocol.ts:3](https://github.com/marcoappio/imap-sdk/blo
 type UID = Brand<number, "UID">;
 ```
 
-Defined in: [src/types/common.ts:4](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L4)
+Defined in: [src/types/common.ts:4](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L4)
 
 ***
 
@@ -7290,7 +7401,7 @@ Defined in: [src/types/common.ts:4](https://github.com/marcoappio/imap-sdk/blob/
 type UIDValidity = Brand<bigint, "UIDValidity">;
 ```
 
-Defined in: [src/types/common.ts:7](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L7)
+Defined in: [src/types/common.ts:7](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L7)
 
 ***
 
@@ -7300,7 +7411,7 @@ Defined in: [src/types/common.ts:7](https://github.com/marcoappio/imap-sdk/blob/
 type UntaggedHandler = (response: ParsedResponse) => Promise<void> | void;
 ```
 
-Defined in: [src/shell/commands/types.ts:6](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L6)
+Defined in: [src/shell/commands/types.ts:6](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L6)
 
 #### Parameters
 
@@ -7322,7 +7433,7 @@ type UntaggedHandlers = {
 };
 ```
 
-Defined in: [src/shell/commands/types.ts:8](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/commands/types.ts#L8)
+Defined in: [src/shell/commands/types.ts:8](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/commands/types.ts#L8)
 
 #### Index Signature
 
@@ -7338,7 +7449,7 @@ Defined in: [src/shell/commands/types.ts:8](https://github.com/marcoappio/imap-s
 ConnectionId: (s: string) => ConnectionId;
 ```
 
-Defined in: [src/types/common.ts:10](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L10)
+Defined in: [src/types/common.ts:10](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L10)
 
 #### Parameters
 
@@ -7376,29 +7487,29 @@ const IMAPSDKErrorCode: {
 };
 ```
 
-Defined in: [src/types/errors.ts:1](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L1)
+Defined in: [src/types/errors.ts:1](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L1)
 
 #### Type Declaration
 
 | Name | Type | Default value | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="authentication_failed"></a> `AUTHENTICATION_FAILED` | `"AUTHENTICATION_FAILED"` | `'AUTHENTICATION_FAILED'` | [src/types/errors.ts:2](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L2) |
-| <a id="command_failed"></a> `COMMAND_FAILED` | `"COMMAND_FAILED"` | `'COMMAND_FAILED'` | [src/types/errors.ts:3](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L3) |
-| <a id="connect_timeout"></a> `CONNECT_TIMEOUT` | `"CONNECT_TIMEOUT"` | `'CONNECT_TIMEOUT'` | [src/types/errors.ts:4](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L4) |
-| <a id="connection_closed"></a> `CONNECTION_CLOSED` | `"CONNECTION_CLOSED"` | `'CONNECTION_CLOSED'` | [src/types/errors.ts:5](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L5) |
-| <a id="disposed-14"></a> `DISPOSED` | `"DISPOSED"` | `'DISPOSED'` | [src/types/errors.ts:6](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L6) |
-| <a id="greeting_timeout"></a> `GREETING_TIMEOUT` | `"GREETING_TIMEOUT"` | `'GREETING_TIMEOUT'` | [src/types/errors.ts:7](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L7) |
-| <a id="internal-14"></a> `INTERNAL` | `"INTERNAL"` | `'INTERNAL'` | [src/types/errors.ts:8](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L8) |
-| <a id="invalid_state"></a> `INVALID_STATE` | `"INVALID_STATE"` | `'INVALID_STATE'` | [src/types/errors.ts:9](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L9) |
-| <a id="missing_extension"></a> `MISSING_EXTENSION` | `"MISSING_EXTENSION"` | `'MISSING_EXTENSION'` | [src/types/errors.ts:10](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L10) |
-| <a id="no_connection"></a> `NO_CONNECTION` | `"NO_CONNECTION"` | `'NO_CONNECTION'` | [src/types/errors.ts:11](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L11) |
-| <a id="parser_error"></a> `PARSER_ERROR` | `"PARSER_ERROR"` | `'PARSER_ERROR'` | [src/types/errors.ts:12](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L12) |
-| <a id="protocol_error"></a> `PROTOCOL_ERROR` | `"PROTOCOL_ERROR"` | `'PROTOCOL_ERROR'` | [src/types/errors.ts:13](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L13) |
-| <a id="socket_timeout"></a> `SOCKET_TIMEOUT` | `"SOCKET_TIMEOUT"` | `'SOCKET_TIMEOUT'` | [src/types/errors.ts:14](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L14) |
-| <a id="throttled-14"></a> `THROTTLED` | `"THROTTLED"` | `'THROTTLED'` | [src/types/errors.ts:15](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L15) |
-| <a id="tls_failed"></a> `TLS_FAILED` | `"TLS_FAILED"` | `'TLS_FAILED'` | [src/types/errors.ts:16](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L16) |
-| <a id="unknown"></a> `UNKNOWN` | `"UNKNOWN"` | `'UNKNOWN'` | [src/types/errors.ts:17](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L17) |
-| <a id="upgrade_timeout"></a> `UPGRADE_TIMEOUT` | `"UPGRADE_TIMEOUT"` | `'UPGRADE_TIMEOUT'` | [src/types/errors.ts:18](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L18) |
+| <a id="authentication_failed"></a> `AUTHENTICATION_FAILED` | `"AUTHENTICATION_FAILED"` | `'AUTHENTICATION_FAILED'` | [src/types/errors.ts:2](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L2) |
+| <a id="command_failed"></a> `COMMAND_FAILED` | `"COMMAND_FAILED"` | `'COMMAND_FAILED'` | [src/types/errors.ts:3](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L3) |
+| <a id="connect_timeout"></a> `CONNECT_TIMEOUT` | `"CONNECT_TIMEOUT"` | `'CONNECT_TIMEOUT'` | [src/types/errors.ts:4](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L4) |
+| <a id="connection_closed"></a> `CONNECTION_CLOSED` | `"CONNECTION_CLOSED"` | `'CONNECTION_CLOSED'` | [src/types/errors.ts:5](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L5) |
+| <a id="disposed-14"></a> `DISPOSED` | `"DISPOSED"` | `'DISPOSED'` | [src/types/errors.ts:6](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L6) |
+| <a id="greeting_timeout"></a> `GREETING_TIMEOUT` | `"GREETING_TIMEOUT"` | `'GREETING_TIMEOUT'` | [src/types/errors.ts:7](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L7) |
+| <a id="internal-14"></a> `INTERNAL` | `"INTERNAL"` | `'INTERNAL'` | [src/types/errors.ts:8](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L8) |
+| <a id="invalid_state"></a> `INVALID_STATE` | `"INVALID_STATE"` | `'INVALID_STATE'` | [src/types/errors.ts:9](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L9) |
+| <a id="missing_extension"></a> `MISSING_EXTENSION` | `"MISSING_EXTENSION"` | `'MISSING_EXTENSION'` | [src/types/errors.ts:10](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L10) |
+| <a id="no_connection"></a> `NO_CONNECTION` | `"NO_CONNECTION"` | `'NO_CONNECTION'` | [src/types/errors.ts:11](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L11) |
+| <a id="parser_error"></a> `PARSER_ERROR` | `"PARSER_ERROR"` | `'PARSER_ERROR'` | [src/types/errors.ts:12](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L12) |
+| <a id="protocol_error"></a> `PROTOCOL_ERROR` | `"PROTOCOL_ERROR"` | `'PROTOCOL_ERROR'` | [src/types/errors.ts:13](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L13) |
+| <a id="socket_timeout"></a> `SOCKET_TIMEOUT` | `"SOCKET_TIMEOUT"` | `'SOCKET_TIMEOUT'` | [src/types/errors.ts:14](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L14) |
+| <a id="throttled-14"></a> `THROTTLED` | `"THROTTLED"` | `'THROTTLED'` | [src/types/errors.ts:15](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L15) |
+| <a id="tls_failed"></a> `TLS_FAILED` | `"TLS_FAILED"` | `'TLS_FAILED'` | [src/types/errors.ts:16](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L16) |
+| <a id="unknown"></a> `UNKNOWN` | `"UNKNOWN"` | `'UNKNOWN'` | [src/types/errors.ts:17](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L17) |
+| <a id="upgrade_timeout"></a> `UPGRADE_TIMEOUT` | `"UPGRADE_TIMEOUT"` | `'UPGRADE_TIMEOUT'` | [src/types/errors.ts:18](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L18) |
 
 ***
 
@@ -7408,7 +7519,7 @@ Defined in: [src/types/errors.ts:1](https://github.com/marcoappio/imap-sdk/blob/
 MailboxPath: (s: string) => MailboxPath;
 ```
 
-Defined in: [src/types/common.ts:8](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L8)
+Defined in: [src/types/common.ts:8](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L8)
 
 #### Parameters
 
@@ -7428,7 +7539,7 @@ Defined in: [src/types/common.ts:8](https://github.com/marcoappio/imap-sdk/blob/
 ModSeq: (n: bigint) => ModSeq;
 ```
 
-Defined in: [src/types/common.ts:6](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L6)
+Defined in: [src/types/common.ts:6](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L6)
 
 #### Parameters
 
@@ -7448,7 +7559,7 @@ Defined in: [src/types/common.ts:6](https://github.com/marcoappio/imap-sdk/blob/
 SequenceNumber: (n: number) => SequenceNumber;
 ```
 
-Defined in: [src/types/common.ts:5](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L5)
+Defined in: [src/types/common.ts:5](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L5)
 
 #### Parameters
 
@@ -7468,7 +7579,7 @@ Defined in: [src/types/common.ts:5](https://github.com/marcoappio/imap-sdk/blob/
 Tag: (s: string) => Tag;
 ```
 
-Defined in: [src/types/common.ts:9](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L9)
+Defined in: [src/types/common.ts:9](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L9)
 
 #### Parameters
 
@@ -7488,7 +7599,7 @@ Defined in: [src/types/common.ts:9](https://github.com/marcoappio/imap-sdk/blob/
 UID: (n: number) => UID;
 ```
 
-Defined in: [src/types/common.ts:4](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L4)
+Defined in: [src/types/common.ts:4](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L4)
 
 #### Parameters
 
@@ -7498,7 +7609,7 @@ Defined in: [src/types/common.ts:4](https://github.com/marcoappio/imap-sdk/blob/
 
 #### Returns
 
-[`UID`](#uid-8)
+[`UID`](#uid-10)
 
 ***
 
@@ -7508,7 +7619,7 @@ Defined in: [src/types/common.ts:4](https://github.com/marcoappio/imap-sdk/blob/
 UIDValidity: (n: bigint) => UIDValidity;
 ```
 
-Defined in: [src/types/common.ts:7](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/common.ts#L7)
+Defined in: [src/types/common.ts:7](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/common.ts#L7)
 
 #### Parameters
 
@@ -7528,7 +7639,7 @@ Defined in: [src/types/common.ts:7](https://github.com/marcoappio/imap-sdk/blob/
 function brand<T, B>(value: T): Brand<T, B>;
 ```
 
-Defined in: [src/types/brand.ts:5](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/brand.ts#L5)
+Defined in: [src/types/brand.ts:5](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/brand.ts#L5)
 
 #### Type Parameters
 
@@ -7555,7 +7666,7 @@ Defined in: [src/types/brand.ts:5](https://github.com/marcoappio/imap-sdk/blob/f
 function createIMAPClient(options: IMAPClientOptions): IMAPClient;
 ```
 
-Defined in: [src/shell/client/index.ts:679](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/shell/client/index.ts#L679)
+Defined in: [src/shell/client/index.ts:679](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/shell/client/index.ts#L679)
 
 #### Parameters
 
@@ -7575,7 +7686,7 @@ Defined in: [src/shell/client/index.ts:679](https://github.com/marcoappio/imap-s
 function Err<E>(error: E): ErrResult<E>;
 ```
 
-Defined in: [src/types/result.ts:6](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L6)
+Defined in: [src/types/result.ts:6](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L6)
 
 #### Type Parameters
 
@@ -7601,7 +7712,7 @@ Defined in: [src/types/result.ts:6](https://github.com/marcoappio/imap-sdk/blob/
 function flatMapResult<T, U, E>(result: Result<T, E>, fn: (value: T) => Result<U, E>): Result<U, E>;
 ```
 
-Defined in: [src/types/result.ts:14](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L14)
+Defined in: [src/types/result.ts:14](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L14)
 
 #### Type Parameters
 
@@ -7630,7 +7741,7 @@ Defined in: [src/types/result.ts:14](https://github.com/marcoappio/imap-sdk/blob
 function isErr<T, E>(result: Result<T, E>): result is ErrResult<E>;
 ```
 
-Defined in: [src/types/result.ts:9](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L9)
+Defined in: [src/types/result.ts:9](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L9)
 
 #### Type Parameters
 
@@ -7657,7 +7768,7 @@ Defined in: [src/types/result.ts:9](https://github.com/marcoappio/imap-sdk/blob/
 function isOk<T, E>(result: Result<T, E>): result is OkResult<T>;
 ```
 
-Defined in: [src/types/result.ts:8](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L8)
+Defined in: [src/types/result.ts:8](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L8)
 
 #### Type Parameters
 
@@ -7684,7 +7795,7 @@ Defined in: [src/types/result.ts:8](https://github.com/marcoappio/imap-sdk/blob/
 function mapResult<T, U, E>(result: Result<T, E>, fn: (value: T) => U): Result<U, E>;
 ```
 
-Defined in: [src/types/result.ts:11](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L11)
+Defined in: [src/types/result.ts:11](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L11)
 
 #### Type Parameters
 
@@ -7713,7 +7824,7 @@ Defined in: [src/types/result.ts:11](https://github.com/marcoappio/imap-sdk/blob
 function Ok<T>(value: T): OkResult<T>;
 ```
 
-Defined in: [src/types/result.ts:5](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L5)
+Defined in: [src/types/result.ts:5](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L5)
 
 #### Type Parameters
 
@@ -7739,7 +7850,7 @@ Defined in: [src/types/result.ts:5](https://github.com/marcoappio/imap-sdk/blob/
 function tryAsync<T>(fn: () => Promise<T>): Promise<Result<T, Error>>;
 ```
 
-Defined in: [src/types/result.ts:37](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L37)
+Defined in: [src/types/result.ts:37](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L37)
 
 #### Type Parameters
 
@@ -7765,7 +7876,7 @@ Defined in: [src/types/result.ts:37](https://github.com/marcoappio/imap-sdk/blob
 function trySync<T>(fn: () => T): Result<T, Error>;
 ```
 
-Defined in: [src/types/result.ts:29](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L29)
+Defined in: [src/types/result.ts:29](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L29)
 
 #### Type Parameters
 
@@ -7791,7 +7902,7 @@ Defined in: [src/types/result.ts:29](https://github.com/marcoappio/imap-sdk/blob
 function unwrap<T, E>(result: Result<T, E>): T;
 ```
 
-Defined in: [src/types/result.ts:19](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L19)
+Defined in: [src/types/result.ts:19](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L19)
 
 #### Type Parameters
 
@@ -7818,7 +7929,7 @@ Defined in: [src/types/result.ts:19](https://github.com/marcoappio/imap-sdk/blob
 function unwrapOr<T, E>(result: Result<T, E>, defaultValue: T): T;
 ```
 
-Defined in: [src/types/result.ts:26](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/result.ts#L26)
+Defined in: [src/types/result.ts:26](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/result.ts#L26)
 
 #### Type Parameters
 
@@ -7849,7 +7960,7 @@ function wrapError(
    message?: string): IMAPSDKError;
 ```
 
-Defined in: [src/types/errors.ts:133](https://github.com/marcoappio/imap-sdk/blob/f77fc04a08fa2803ebab2d0e39335f238c9fd73c/src/types/errors.ts#L133)
+Defined in: [src/types/errors.ts:133](https://github.com/marcoappio/imap-sdk/blob/5284c5b0e32ab15376eb901db9194f49d2faed19/src/types/errors.ts#L133)
 
 #### Parameters
 
