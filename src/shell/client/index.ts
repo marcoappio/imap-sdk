@@ -285,7 +285,30 @@ export class IMAPClient extends EventEmitter implements CommandContext, AsyncDis
     }
 
     this.stateMachine.send({ type: 'AUTHENTICATED', user })
+
+    await this.enableExtensions()
+
     return user
+  }
+
+  private async enableExtensions(): Promise<void> {
+    const extensionsToEnable: string[] = []
+
+    if (this._capabilities.has('CONDSTORE')) {
+      extensionsToEnable.push('CONDSTORE')
+    }
+
+    if (this._capabilities.has('QRESYNC')) {
+      extensionsToEnable.push('QRESYNC')
+    }
+
+    if (this._capabilities.has('UTF8=ACCEPT')) {
+      extensionsToEnable.push('UTF8=ACCEPT')
+    }
+
+    if (extensionsToEnable.length > 0) {
+      await this.run('ENABLE', extensionsToEnable)
+    }
   }
 
   async exec(
